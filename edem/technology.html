@@ -19,7 +19,6 @@
   </script>
 </head>
 <body class="page technology-page">
-
     <header class="page__header header">
       <div class="header__top-row">
   
@@ -32,7 +31,7 @@
                   <a href="" class="menu__link">Блог</a>
                 </li>
                 <li class="menu__item">
-                  <a href="technology.html" class="menu__link">Технологии</a>
+                  <span class="menu__link is-active">Технологии</span>
                 </li>
                 <li class="menu__item">
                   <a href="" class="menu__link">Частые вопросы</a>
@@ -133,7 +132,7 @@
                 </li>
                 <li class="contacts__social-item">
                   <a href="" class="contacts__social-link" aria-label="Переход на страницу телеграма  ">
-                    <svg class="icon icon-social">
+                    <svg class="icon icon-social icon-telegram">
                       <use xlink:href="img/design/symbol_sprite.svg#_telegram"/>
                     </svg>
                   </a>
@@ -147,26 +146,25 @@
     </div>
   </header>
 
-
   <main class="page__body">
     <div class="container">
       <section class="page__technology technology">
         <header class="technology__header">
-          <h1 class="technology__title">Применяем современные технологии</h1>
+          <h2 class="technology__title">Применяем современные технологии</h2>
           <ul class="technology__tags-list">
             <li class="technology__tags-item">Экономим время</li>
             <li class="technology__tags-item">Экономим деньги</li>
           </ul>
+          <a href="technology.html" class="link technology__link">Подробнее о технологиях</a>
         </header>
-
         <div class="technology__previews">
           <section class="technology__previews-item">
             <div class="technology__item-inner">
               <div class="technology__video">
                 <video src="" poster="img/content/poster.jpg"></video>
-                <button class="technology__video-btn">
+                <button class="technology__video-btn" aria-label="Нажмите для воспроизвидения видео">
                   <svg class="icon icon-play-btn">
-                    <use xlink:href="img/design/_sprite.svg#_play-btn"></use>
+                    <use xlink:href="img/design/symbol_sprite.svg#_play-btn"></use>
                   </svg>
                 </button>
               </div>
@@ -177,14 +175,13 @@
               <a href="technology.html" class="link technology__previews-link">Смотреть как это работает</a>
             </div>
           </section>
-
           <section class="technology__previews-item">
             <div class="technology__item-inner">
               <div class="technology__video">
                 <video src="" poster="img/content/poster.jpg"></video>
-                <button class="technology__video-btn">
+                <button class="technology__video-btn" aria-label="Нажмите для воспроизвидения видео">
                   <svg class="icon icon-play-btn">
-                    <use xlink:href="img/design/_sprite.svg#_play-btn"></use>
+                    <use xlink:href="img/design/symbol_sprite.svg#_play-btn"></use>
                   </svg>
                 </button>
               </div>
@@ -195,14 +192,13 @@
               <a href="technology.html" class="technology__previews-link link">Смотреть как это работает</a>
             </div>
           </section>
-
           <section class="technology__previews-item">
             <div class="technology__item-inner">
               <div class="technology__video">
                 <video src="" poster="img/content/poster.jpg"></video>
-                <button class="technology__video-btn">
+                <button class="technology__video-btn" aria-label="Нажмите для воспроизвидения видео">
                   <svg class="icon icon-play-btn">
-                    <use xlink:href="img/design/_sprite.svg#_play-btn"></use>
+                    <use xlink:href="img/design/symbol_sprite.svg#_play-btn"></use>
                   </svg>
                 </button>
               </div>
@@ -213,53 +209,10 @@
               <a href="technology.html" class="link technology__previews-link">Смотреть как это работает</a>
             </div>
           </section>
-
         </div>
       </section>
-      <!-- end .page__technology -->
     </div>
   </main>
-  <footer class="page__footer">
-    <div class="container">
-      <div class="contacts">
-        <ul class="contacts__tel-list">
-          <li class="contacts__tel-item">
-            <a href="tel:+74951157103" class="contacts__tel-link tel-link">+7 (495) 115 71 03</a>
-          </li>
-          <li class="contacts__tel-item">
-            <a href="tel:+79251337770" class="contacts__tel-link tel-link">+7 (925) 133 77 70</a>
-          </li>
-        </ul>
-      
-        <address class="contacts__address">
-          <a href="mailto:info@edem-sk.pro" class="contacts__address-link">info@edem-sk.pro</a>
-          <p class="contacts__address-txt">
-            119331, Москва,<br>
-            пр. Вернадского  21к3, офис 603
-          </p>
-        </address>
-      
-        <ul class="contacts__social-list">
-          
-          <li class="contacts__social-item">
-            <a href="" class="contacts__social-link" aria-label="Переход на страницу телеграма  ">
-              <svg class="icon icon-social">
-                <use xlink:href="img/design/symbol_sprite.svg#_insta"/>
-              </svg>
-            </a>
-          </li>
-          <li class="contacts__social-item">
-            <a href="" class="contacts__social-link" aria-label="Переход на страницу телеграма  ">
-              <svg class="icon icon-social">
-                <use xlink:href="img/design/symbol_sprite.svg#_telegram"/>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      
-    </div>
-  </footer>
   <!-- If need change language, change here  &language=en -->
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB86wuTDCPFfzEtDlGf_8VZxZxSeojv_4w&callback=initMap&language=en" async defer></script> -->
 

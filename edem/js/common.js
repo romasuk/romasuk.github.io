@@ -3,22 +3,54 @@
 /* ===========================
   #SWIPER
 ============================= */
+// import Swiper, { Navigation, Pagination } from 'swiper';
+// Swiper.use([Navigation, Pagination])
 
-/*import Swiper, { Navigation, Pagination } from 'swiper';
-Swiper.use([Navigation, Pagination])
-let mySwiper = new Swiper('.swiper-container', {
+var gallerySlider = new Swiper('.projects-gallery .swiper-container', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.projects-gallery .swiper-button-next',
+    prevEl: '.projects-gallery .swiper-button-prev'
+  }
+});
+var teamSlider = new Swiper('.our-team-slider .swiper-container', {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 3,
+  breakpoints: {
+    // when window width is >= 900px
+    900: {
+      slidesPerView: 5,
+      spaceBetween: 45
+    }
   },
+  pagination: {
+    el: '.our-team-slider .swiper-pagination',
+    type: 'custom',
+    renderCustom: function renderCustom(swiper, current, total) {
+      if (current < 10) {
+        current = "0".concat(current);
+      }
 
-})*/
+      if (total < 10) {
+        total = "0".concat(total);
+      }
 
+      return "<span class=\"swiper-pagination-current\">".concat(current, "</span> &mdash; <span class=\"swiper-pagination-total\">").concat(total, "</span>");
+    }
+  },
+  navigation: {
+    nextEl: '.our-team-slider .swiper-button-next',
+    prevEl: '.our-team-slider .swiper-button-prev'
+  }
+});
+var blogPreviewsSlider = new Swiper('.blog-previews .swiper-container', {
+  slidesPerView: 'auto',
+  freeMode: true
+});
 /* ===========================
   #SMOTH SCROLL
 ============================= */
