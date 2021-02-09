@@ -18,14 +18,385 @@
     document.documentElement.setAttribute('data-useragent', navigator.userAgent);
   </script>
 </head>
-<body class="page page__services">
-
+<body class="page services-page">
+    <header class="page__header header">
+      <div class="header__top-row">
+  
+        <div class="container">
+          <div class="header__inner">
+  
+            <nav class="menu header-menu" data-jump data-jump-to=".drop-content__inner.js-jump 1 1100">
+              <ul class="menu__list header-menu__list">
+                <li class="menu__item header-menu__item">
+                  <a href="" class="menu__link header-menu__link">Блог</a>
+                </li>
+                <li class="menu__item header-menu__item">
+                  <a href="technology.html" class="menu__link header-menu__link">Технологии</a>
+                </li>
+                <li class="menu__item header-menu__item">
+                  <a href="" class="menu__link header-menu__link">Частые вопросы</a>
+                </li>
+                <li class="menu__item header-menu__item">
+                  <a href="about.html" class="menu__link header-menu__link">О компании</a>
+                </li>
+                <li class="menu__item header-menu__item">
+                  <a href="" class="menu__link header-menu__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+  
+            <div class="header__work-time">Пн – Пт / с 9:00 до 18:00</div>
+  
+          </div>
+        </div>
+      </div>
+      <!-- end .header__top-row -->
+  
+      <div class="container">
+        <div class="header__inner header__bottom-row js-jump">
+  
+          <div class="header__logo-wrap">
+            <a href="/" class="logo">
+              <img class="logo__img header__logo-img" src="img/content/logo.svg" alt="Логотип компании ЕДЕМ">
+              <div class="logo__txt">
+                <p>Ремонт и отделка квартир, коттеджей, офисов в Москве и Московской области</p>
+              </div>
+            </a>
+          </div>
+  
+        <button class="burger" title="Кнопка открытия и закрытия навигации" aria-label="Кнопка открытия и закрытия меню       ">
+          <span class="burger__toggle"></span>
+        </button>
+        <div class="header__main-menu-wrap drop-content">
+          <div class="drop-content__inner js-jump">
+  
+            <nav class="header__main-menu main-menu">
+              <ul class="main-menu__list">
+                <li class="main-menu__item">
+                  <ul class="main-menu__inner-list">
+                    <li class="main-menu__inner-item">
+                      <a href="services.html" class="main-menu__link main-menu__link--active main-menu__inner-link">Услуги</a>
+                    </li>
+                    <li class="main-menu__inner-item">
+                      <a href="projects.html" class="main-menu__link main-menu__inner-link">Проекты</a>
+                    </li>
+                    <li class="main-menu__inner-item">
+                      <a href="" class="main-menu__link main-menu__inner-link">Акции</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="main-menu__item main-menu__work">
+                  <a href="" class="main-menu__link main-menu__work-link">Проекты в работе <sup>06</sup></a>
+                </li>
+                <li class="main-menu__item main-menu__repair-calc">
+                  <a href="" class="main-menu__link">Калькулятор ремонта</a>
+                </li>
+                <li class="main-menu__item">
+                  <div class="main-menu__tel">
+                    <a href="tel:+74951157103" class="main-menu__tel-link" data-jump data-jump-to=".header__bottom-row.js-jump 1 1100" aria-label="Вы можете связаться с нами по нажатию на кнопку">
+                      <span class="main-menu__tel-num">+7 495 115 71 03</span>
+                    </a>
+                    <a href="#feedback" class="main-menu__btn btn " data-jump data-jump-to=".drop-content__inner.js-jump 2 1100">
+                      Заказать звонок
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <div class="contacts">
+              <ul class="contacts__tel-list">
+                <li class="contacts__tel-item">
+                  <a href="tel:+74951157103" class="contacts__tel-link tel-link">+7 (495) 115 71 03</a>
+                </li>
+                <li class="contacts__tel-item">
+                  <a href="tel:+79251337770" class="contacts__tel-link tel-link">+7 (925) 133 77 70</a>
+                </li>
+              </ul>
+            
+              <address class="contacts__address">
+                <a href="mailto:info@edem-sk.pro" class="contacts__address-link">info@edem-sk.pro</a>
+                <p class="contacts__address-txt">
+                  119331, Москва,<br>
+                  пр. Вернадского  21к3, офис 603
+                </p>
+              </address>
+            
+              <ul class="contacts__social-list">
+                
+                <li class="contacts__social-item">
+                  <a href="" class="contacts__social-link" aria-label="Переход на страницу телеграма  ">
+                    <svg class="icon icon-social">
+                      <use xlink:href="img/design/symbol_sprite.svg#_insta"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contacts__social-item">
+                  <a href="" class="contacts__social-link" aria-label="Переход на страницу телеграма  ">
+                    <svg class="icon icon-social icon-telegram">
+                      <use xlink:href="img/design/symbol_sprite.svg#_telegram"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </header>
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">
+          Эдем
+        </a></li>
+        <li class="breadcrumbs__item"><span class="breadcrumbs__item-separator">/</span><a href="" class="breadcrumbs__link">Услуги</a></li>
+      </ul>
+    </div>
+  </div>
   <main class="page__body">
+    <div class="container">
+
+      <h1 class="page__title">Воплотите свою мечту в жизнь!</h1>
+      <div class="services-page__categories">
+        <div class="services-page__category service-category">
+          <h2 class="service-category__title">Дизайн интерьера</h2>
+          <div class="service-category__list">
+        
+            <a href="" class="service-category__item">
+              <div class="service-preview">
+                <div class="service-preview__img-wrap">
+                  <img src="img/content/services_preview1.jpg" alt="Дизайн-проект кухни" class="service-preview__img">
+                </div>        
+                <h3 class="service-preview__title">Полный дизайн-проект</h3>
+              </div>
+            </a>
+            
+            <a href="" class="service-category__item">
+              <div class="service-preview">
+               <div class="service-preview__img-wrap">
+                <img src="img/content/services_preview2.jpg" alt="Дизайн-проект кухни" class="service-preview__img">
+              </div>
+              <h3 class="service-preview__title">Эскизный проект</h3>
+            </div>
+          </a>
+        
+          <a href="" class="service-category__item">
+            <div class="service-preview">
+              <div class="service-preview__img-wrap">
+                <img src="img/content/services_preview3.jpg" alt="Дизайн-проект кухни" class="service-preview__img">
+              </div>
+              <h3 class="service-preview__title">Рабочие чертежи</h3>
+            </div>
+          </a>
+        
+          <a href="" class="service-category__item">
+            <div class="service-preview">
+              <div class="service-preview__img-wrap">
+                <img src="img/content/services_preview4.jpg" alt="Дизайн-проект кухни" class="service-preview__img">
+              </div>
+              <h3 class="service-preview__title">3D визуализация</h3>
+            </div>
+          </a>
+          <a href="" class="service-category__item">
+            <div class="service-preview">
+              <div class="service-preview__img-wrap">
+                <img src="img/content/services_preview5.jpg" alt="Дизайн-проект кухни" class="service-preview__img">
+              </div>
+              <h3 class="service-preview__title">Авторский надзор</h3>
+            </div>
+          </a>
+        </div>
+        </div>
+        
+        <div class="services-page__category service-category">
+          <h2 class="service-category__title">Ремонт под ключ</h2>
+          <div class="service-category__list">
+        
+            <a href="" class="service-category__item">
+              <div class="service-preview">
+                
+                <div class="service-preview__img-wrap">
+                  <img src="img/content/services_preview6.jpg" alt="Дизайн-проект кухни" class="service-preview__img">
+                </div>
+                <h3 class="service-preview__title">Пакет «Стандарт»</h3>
+                <p class="service-preview__desc">
+                  Применяются стандартные решения с использованием простых и доступных отделочных материалов
+                </p>
+              </div>
+            </a>
+            <a href="" class="service-category__item">
+              <div class="service-preview">
+                
+                <div class="service-preview__img-wrap">
+                  <img src="img/content/services_preview7.jpg" alt="Дизайн-проект кухни" class="service-preview__img">
+                </div>
+                <h3 class="service-preview__title">Пакет «Комфорт»</h3>
+                <p class="service-preview__desc">
+                  Индивидуальный проект с применением специализированных отделочных материалов
+                </p>
+              </div>
+            </a>
+            <a href="" class="service-category__item">
+              <div class="service-preview">
+                
+                <div class="service-preview__img-wrap">
+                  <img src="img/content/services_preview8.jpg" alt="Дизайн-проект кухни" class="service-preview__img">
+                </div>
+                <h3 class="service-preview__title">Пакет «Бизнес»</h3>
+                <p class="service-preview__desc">
+                  Индивидуальный проект с применением эксклюзивных отделочных материалов
+                </p>
+              </div>
+            </a>
+            <a href="" class="service-category__item">
+              <div class="service-preview">
+                
+                <div class="service-preview__img-wrap">
+                  <img src="img/content/services_preview9.jpg" alt="Дизайн-проект кухни" class="service-preview__img">
+                </div>
+                <h3 class="service-preview__title">Ремонт санузлов</h3>
+              </div>
+            </a>
+            <a href="" class="service-category__item">
+              <div class="service-preview">
+                
+                <div class="service-preview__img-wrap">
+                  <img src="img/content/services_preview10.jpg" alt="Дизайн-проект кухни" class="service-preview__img">
+                </div>
+                <h3 class="service-preview__title">Косметический ремонт</h3>
+              </div>
+            </a>
+            
+        
+          </div>
+        </div>
+      </div>
+      <div class="services-page__fedback">
+        <section class="feedback feedback--colored" id="feedback">
+          <div class="feedback__inner">
+            <h3 class="feedback__title">Запишитесь на просмотр объектов, которые сейчас в работе</h3>
+        
+            <form action="action.php" method="GET" class="form">
+              <label class="form__field-label"><input class="input-field input-field--white" type="text" name="Name" placeholder="Имя" maxlength="100" required></label>
+        
+              <label class="form__field-label"><input class="input-field input-field--white" type="tel" name="Phone number" placeholder="Телефон" maxlength="100" required pattern="[0-9]"></label>
+              
+              <footer class="form__footer">
+                <button class="btn btn--fill btn--fill-white form__btn">Обсудить проект</button>
+                <p class="form__policy">Нажимая на кнопку «Записаться», вы соглашаетесь с нашей <a class="form__link" href="">Политикой конфиденциальности</a></p>
+              </footer>
+            </form>
+        
+          </div>
+        </section>
+      </div>
+    </div>
     
   </main>
-  <!-- If need change language, change here  &language=en -->
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB86wuTDCPFfzEtDlGf_8VZxZxSeojv_4w&callback=initMap&language=en" async defer></script> -->
 
+  <footer class="page__footer footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__contacts">
+  
+          <a class="logo footer__logo">
+            <img class="logo__img" src="img/content/logo.svg" alt="Логотип компании ЕДЕМ">
+          </a>
+          <div class="contacts">
+            <ul class="contacts__tel-list">
+              <li class="contacts__tel-item">
+                <a href="tel:+74951157103" class="contacts__tel-link tel-link">+7 (495) 115 71 03</a>
+              </li>
+              <li class="contacts__tel-item">
+                <a href="tel:+79251337770" class="contacts__tel-link tel-link">+7 (925) 133 77 70</a>
+              </li>
+            </ul>
+          
+            <address class="contacts__address">
+              <a href="mailto:info@edem-sk.pro" class="contacts__address-link">info@edem-sk.pro</a>
+              <p class="contacts__address-txt">
+                119331, Москва,<br>
+                пр. Вернадского  21к3, офис 603
+              </p>
+            </address>
+          
+            <ul class="contacts__social-list">
+              
+              <li class="contacts__social-item">
+                <a href="" class="contacts__social-link" aria-label="Переход на страницу телеграма  ">
+                  <svg class="icon icon-social">
+                    <use xlink:href="img/design/symbol_sprite.svg#_insta"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__social-item">
+                <a href="" class="contacts__social-link" aria-label="Переход на страницу телеграма  ">
+                  <svg class="icon icon-social icon-telegram">
+                    <use xlink:href="img/design/symbol_sprite.svg#_telegram"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="menu footer__menu">
+          <ul class="menu__list">
+            <li class="menu__item footer__list-item">
+              <a href="" class="menu__link footer__link">Проекты</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="" class="menu__link footer__link">Акции</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="" class="menu__link footer__link">Блог</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="technology.html" class="menu__link footer__link">Технологии</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="" class="menu__link footer__link">Частые вопросы</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="about.html" class="menu__link footer__link">О компании</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="" class="menu__link footer__link">Контакты</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="" class="menu__link footer__link">Проекты в работе</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer__list">
+          <li class="footer__list-item">Ремонт под ключ</li>
+          <li class="footer__list-item"><a href="" class="footer__link">Стандарт — от 9000 руб / м²</a></li>
+          <li class="footer__list-item"><a href="" class="footer__link">Комфорт — от 11 000 руб / м²</a></li>
+          <li class="footer__list-item"><a href="" class="footer__link">Бизнес — от 14 000 руб / м²</a></li>
+          <li class="footer__list-item"><a href="" class="footer__link">Ремонт санузлов</a></li>
+          <li class="footer__list-item"><a href="" class="footer__link">Косметический ремонт</a></li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__list-item">Дизайн интерьера</li>
+          <li class="footer__list-item"><a href="" class="footer__link">Дизайн-проект под ключ</a></li>
+          <li class="footer__list-item"><a href="" class="footer__link">Базовый дизайн-проект</a></li>
+          <li class="footer__list-item"><a href="" class="footer__link">3-D визуализация</a></li>
+          <li class="footer__list-item"><a href="" class="footer__link">Авторский надзор</a></li>
+          <li class="footer__list-item"><a href="" class="footer__link">Комплектация объекта</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer__copy-wrap">
+        <div class="footer__copy">
+          <p class="footer__copy-txt">&copy; 2020, Эдэм. Ремонт и отделка квартир, коттеджей, офисов в Москве и МО</p>
+          <a href="" class="footer__copy-link">Политика конфиденциальности</a>
+        </div>
+      </div>
+  
+    </div>
+  </footer>
+  <script src="js/libs.js"></script>
   <script src="js/common.min.js"></script>
 </body>
 </html>
