@@ -38,7 +38,7 @@
             <nav class="menu header-menu" data-jump data-jump-to=".drop-content__inner.js-jump 1 1100">
               <ul class="menu__list header-menu__list">
                 <li class="menu__item header-menu__item">
-                  <a href="" class="menu__link header-menu__link">Блог</a>
+                  <a href="blog.html" class="menu__link header-menu__link">Блог</a>
                 </li>
                 <li class="menu__item header-menu__item">
                   <a href="technology.html" class="menu__link header-menu__link">Технологии</a>
@@ -156,7 +156,7 @@
     </div>
   </header>
   
-  <main class="main-page__body">
+  <main class="page__body">
     <div class="main-page__baner">
       <section class="container main-page__baner-inner">
         <h1 class="main-page__baner-title">Эксперты в сфере ремонта</h1>
@@ -166,26 +166,31 @@
     </div>
 
     <div class="container">
-      <div class="main-page__info info">
-        <a href="about.html" class="btn btn--fill btn--fill-prim btn--animated info__link-more">Подробнее о компании</a>
-        <section class="info__garantee">
-          <h3 class="info__title">Гарантируем</h3>
-          <ul class="info__list">
-            <li class="info__item">Многоуровневый контроль качества</li>
-            <li class="info__item">Сроки и стоимость зафиксированы </li>
-            <li class="info__item">Оплата по факту выполнения этапа</li>
-            <li class="info__item">Персональный менеджер для вашего проекта</li>
+      <div class="main-page__advantage">
+        <div class="our-advantage">
+          <a href="about.html" class="btn btn--fill btn--fill-prim btn--animated our-advantage__link-more">Подробнее о компании</a>
+        
+          <h4 class="our-advantage__title">Гарантируем</h4>
+          <ul class="our-advantage__list">
+            <li class="our-advantage__item">Многоуровневый контроль качества</li>
+            <li class="our-advantage__item">Сроки и стоимость зафиксированы </li>
+            <li class="our-advantage__item">Оплата по факту выполнения этапа</li>
+            <li class="our-advantage__item">Персональный менеджер для вашего проекта</li>
           </ul>
-        </section>
-        <section class="info__nums">
-          <h3 class="info__title">Мы в цифрах</h3>
-          <ul class="info__list">
-            <li class="info__item"><span class="info__num">72</span>сотрудника в штате</li>
-            <li class="info__item"><span class="info__num">5</span>дизайнеров</li>
-            <li class="info__item"><span class="info__num info__num--blue">320</span>завершенных проектов</li>
-            <li class="info__item"><span class="info__num">47%</span>клиентов по рекомендации</li>
+        </div>
+        
+        <div class="our-advantage our-advantage--hidden line">
+          <h4 class="our-advantage__title">Мы в цифрах</h4>
+          <ul class="our-advantage__list">
+            <li class="our-advantage__item"><span class="our-advantage__num">72</span>сотрудника в штате</li>
+            <li class="our-advantage__item"><span class="our-advantage__num">5</span>дизайнеров</li>
+            <li class="our-advantage__item"><span class="our-advantage__num our-advantage__num--blue">320</span>завершенных проектов</li>
+            <li class="our-advantage__item"><span class="our-advantage__num">47%</span>клиентов по рекомендации</li>
           </ul>
-        </section>
+        </div>
+      </div>
+
+      <div class="main-page__services">
         <div class="page__info-services services">
           <section class="services__item">
             <div class="services__item-inner services__design-inner">
@@ -199,7 +204,7 @@
                   <li>Комплектация объекта</li>
                 </ul>
               </div>
-              <a href="" class="btn btn--animated btn--transparent services__btn">Смотреть услуги</a>
+              <a href="services.html" class="btn btn--animated btn--transparent services__btn">Смотреть услуги</a>
             </div>
           </section>
           <section class="services__item">
@@ -214,74 +219,77 @@
                   <li>Комплектация объекта</li>
                 </ul>
               </div>
-              <a href="" class="btn btn--animated btn--transparent services__btn">Смотреть услуги</a>
+              <a href="services.html" class="btn btn--animated btn--transparent services__btn">Смотреть услуги</a>
             </div>
           </section>
         </div>
       </div>
-      <section class="page__technology technology">
-        <header class="technology__header">
-          <h2 class="technology__title">Применяем современные технологии</h2>
-          <ul class="technology__tags-list">
-            <li class="technology__tags-item">Экономим время</li>
-            <li class="technology__tags-item">Экономим деньги</li>
-          </ul>
-          <a href="technology.html" class="link technology__link">Подробнее о технологиях</a>
-        </header>
-        <div class="technology__previews">
-          <section class="technology__previews-item">
-            <div class="technology__item-inner">
-              <div class="technology__video">
-                <video src="" poster="img/content/poster.jpg"></video>
-                <button class="technology__video-btn" aria-label="Нажмите для воспроизвидения видео">
-                  <svg class="icon icon-play-btn">
-                    <use xlink:href="img/design/symbol_sprite.svg#_play-btn"></use>
-                  </svg>
-                </button>
+      
+      <div class="main-page__technology">
+        <section class="technology">
+          <header class="technology__header">
+            <h2 class="technology__title">Применяем современные технологии</h2>
+            <ul class="technology__tags-list">
+              <li class="technology__tags-item">Экономим время</li>
+              <li class="technology__tags-item">Экономим деньги</li>
+            </ul>
+            <a href="technology.html" class="link technology__link">Подробнее о технологиях</a>
+          </header>
+          <div class="technology__previews">
+            <section class="technology__previews-item">
+              <div class="technology__item-inner">
+                <div class="technology__video video">
+                  <video src="" poster="img/content/poster.jpg"></video>
+                  <button class="video__btn" aria-label="Нажмите для воспроизвидения видео">
+                    <svg class="icon icon-play-btn">
+                      <use xlink:href="img/design/symbol_sprite.svg#_play-btn"></use>
+                    </svg>
+                  </button>
+                </div>
+                <h3 class="technology__previews-title">Механи&shy;зированная шпаклевка</h3>
+                <div class="technology__previews-txt">
+                  <p>Гладкие стены в три раза быстрее</p>
+                </div>
+                <a href="technology.html" class="link technology__previews-link">Смотреть как это работает</a>
               </div>
-              <h3 class="technology__previews-title">Механи&shy;зированная шпаклевка</h3>
-              <div class="technology__previews-txt">
-                <p>Гладкие стены в три раза быстрее</p>
+            </section>
+            <section class="technology__previews-item">
+              <div class="technology__item-inner">
+                <div class="technology__video video">
+                  <video src="" poster="img/content/poster.jpg"></video>
+                  <button class="video__btn" aria-label="Нажмите для воспроизвидения видео">
+                    <svg class="icon icon-play-btn">
+                      <use xlink:href="img/design/symbol_sprite.svg#_play-btn"></use>
+                    </svg>
+                  </button>
+                </div>
+                <h3 class="technology__previews-title">Механизи&shy;рованная штукатурка</h3>
+                <div class="technology__previews-txt">
+                  <p>Ровные стены в четыре раза быстрее</p>
+                </div>
+                <a href="technology.html" class="technology__previews-link link">Смотреть как это работает</a>
               </div>
-              <a href="technology.html" class="link technology__previews-link">Смотреть как это работает</a>
-            </div>
-          </section>
-          <section class="technology__previews-item">
-            <div class="technology__item-inner">
-              <div class="technology__video">
-                <video src="" poster="img/content/poster.jpg"></video>
-                <button class="technology__video-btn" aria-label="Нажмите для воспроизвидения видео">
-                  <svg class="icon icon-play-btn">
-                    <use xlink:href="img/design/symbol_sprite.svg#_play-btn"></use>
-                  </svg>
-                </button>
+            </section>
+            <section class="technology__previews-item">
+              <div class="technology__item-inner">
+                <div class="technology__video video">
+                  <video src="" poster="img/content/poster.jpg"></video>
+                  <button class="video__btn" aria-label="Нажмите для воспроизвидения видео">
+                    <svg class="icon icon-play-btn">
+                      <use xlink:href="img/design/symbol_sprite.svg#_play-btn"></use>
+                    </svg>
+                  </button>
+                </div>
+                <h3 class="technology__previews-title">Механизи&shy;рованная покраска стен и потолка</h3>
+                <div class="technology__previews-txt">
+                  <p>Идеальные стены без следов от валика</p>
+                </div>
+                <a href="technology.html" class="link technology__previews-link">Смотреть как это работает</a>
               </div>
-              <h3 class="technology__previews-title">Механизи&shy;рованная штукатурка</h3>
-              <div class="technology__previews-txt">
-                <p>Ровные стены в четыре раза быстрее</p>
-              </div>
-              <a href="technology.html" class="technology__previews-link link">Смотреть как это работает</a>
-            </div>
-          </section>
-          <section class="technology__previews-item">
-            <div class="technology__item-inner">
-              <div class="technology__video">
-                <video src="" poster="img/content/poster.jpg"></video>
-                <button class="technology__video-btn" aria-label="Нажмите для воспроизвидения видео">
-                  <svg class="icon icon-play-btn">
-                    <use xlink:href="img/design/symbol_sprite.svg#_play-btn"></use>
-                  </svg>
-                </button>
-              </div>
-              <h3 class="technology__previews-title">Механизи&shy;рованная покраска стен и потолка</h3>
-              <div class="technology__previews-txt">
-                <p>Идеальные стены без следов от валика</p>
-              </div>
-              <a href="technology.html" class="link technology__previews-link">Смотреть как это работает</a>
-            </div>
-          </section>
-        </div>
-      </section>
+            </section>
+          </div>
+        </section>
+      </div>
       <!-- end .main-page__technology -->
         
         <div class="page__steps steps">
@@ -370,15 +378,15 @@
           </div>
         <!-- end .main-page__steps -->
       </div>
-      <section class="main-page__projects projects">
+      <div class="main-page__projects projects">
         <header class="projects__header container">
           <h2 class="projects__title">Наши проекты</h2>
-          <a href="projects.html" class="link link--framed link-more" data-jump data-jump-to=".projects__projects-gallery.js-jump 2 600">Все проекты</a>
+          <a href="projects.html" class="link link--framed link-more" data-jump data-jump-to=".projects__gallery.js-jump 2 600">Все проекты</a>
         </header>
 
-        <div class="projects__projects-gallery container js-jump">
-          <div class="projects__gallery projects-gallery">
-            <div class="projects-gallery__item">
+        <div class="projects__gallery main-page__gallery container js-jump">
+          <div class="gallery">
+            <div class="gallery__item">
               <div class="gallery-slider slider">
                 <!-- Slider main container -->
                 <div class="swiper-container slider__container">
@@ -423,22 +431,22 @@
                     </div>
                   </div>
                   <!-- If we need navigation buttons -->
-                  <button class="swiper-button-prev slider__btn slider__btn--prev" aria-label="Переключить на предидущий слайд">
-                    <svg class="icon icon-arrow icon-arrow--white">
+                  <button class="swiper-button-prev slider__btn slider__btn--fill-round slider__btn--prev" aria-label="Переключить на предидущий слайд">
+                    <svg class="icon icon-arrow">
                       <use xlink:href="img/design/symbol_sprite.svg#_arrow-left"/>
                     </svg>
                   </button>
-                  <button class="swiper-button-next slider__btn slider__btn--next" aria-label="Переключить на следующий слайд">
-                    <svg class="icon icon-arrow icon-arrow--white">
+                  <button class="swiper-button-next slider__btn slider__btn--fill-round slider__btn--next" aria-label="Переключить на следующий слайд">
+                    <svg class="icon icon-arrow">
                       <use xlink:href="img/design/symbol_sprite.svg#_arrow-right"/>
                     </svg>
                   </button>
                 </div>
               </div>
-              <p class="projects-gallery__label tag-label">Квартиры и студии</p>
-              <p class="projects-gallery__desc">3-х комнатная квартира 120 м², Красногорский бульвар 34</p>
+              <p class="gallery__tag tag tag--float">Квартиры и студии</p>
+              <p class="gallery__desc">3-х комнатная квартира 120 м², Красногорский бульвар 34</p>
             </div>
-            <div class="projects-gallery__item">
+            <div class="gallery__item">
               <div class="gallery-slider slider">
                 <!-- Slider main container -->
                 <div class="swiper-container slider__container">
@@ -483,22 +491,22 @@
                     </div>
                   </div>
                   <!-- If we need navigation buttons -->
-                  <button class="swiper-button-prev slider__btn slider__btn--prev" aria-label="Переключить на предидущий слайд">
-                    <svg class="icon icon-arrow icon-arrow--white">
+                  <button class="swiper-button-prev slider__btn slider__btn--fill-round slider__btn--prev" aria-label="Переключить на предидущий слайд">
+                    <svg class="icon icon-arrow">
                       <use xlink:href="img/design/symbol_sprite.svg#_arrow-left"/>
                     </svg>
                   </button>
-                  <button class="swiper-button-next slider__btn slider__btn--next" aria-label="Переключить на следующий слайд">
-                    <svg class="icon icon-arrow icon-arrow--white">
+                  <button class="swiper-button-next slider__btn slider__btn--fill-round slider__btn--next" aria-label="Переключить на следующий слайд">
+                    <svg class="icon icon-arrow">
                       <use xlink:href="img/design/symbol_sprite.svg#_arrow-right"/>
                     </svg>
                   </button>
                 </div>
               </div>
-              <p class="projects-gallery__label tag-label">Коттеджи и таунхаусы</p>
-              <p class="projects-gallery__desc">Коттедж 700 м², ул. Бабакино</p>
+              <p class="gallery__tag tag tag--float">Коттеджи и таунхаусы</p>
+              <p class="gallery__desc">Коттедж 700 м², ул. Бабакино</p>
             </div>
-            <div class="projects-gallery__item">
+            <div class="gallery__item">
               <div class="gallery-slider slider">
                 <!-- Slider main container -->
                 <div class="swiper-container slider__container">
@@ -543,22 +551,22 @@
                     </div>
                   </div>
                   <!-- If we need navigation buttons -->
-                  <button class="swiper-button-prev slider__btn slider__btn--prev" aria-label="Переключить на предидущий слайд">
-                    <svg class="icon icon-arrow icon-arrow--white">
+                  <button class="swiper-button-prev slider__btn slider__btn--fill-round slider__btn--prev" aria-label="Переключить на предидущий слайд">
+                    <svg class="icon icon-arrow">
                       <use xlink:href="img/design/symbol_sprite.svg#_arrow-left"/>
                     </svg>
                   </button>
-                  <button class="swiper-button-next slider__btn slider__btn--next" aria-label="Переключить на следующий слайд">
-                    <svg class="icon icon-arrow icon-arrow--white">
+                  <button class="swiper-button-next slider__btn slider__btn--fill-round slider__btn--next" aria-label="Переключить на следующий слайд">
+                    <svg class="icon icon-arrow">
                       <use xlink:href="img/design/symbol_sprite.svg#_arrow-right"/>
                     </svg>
                   </button>
                 </div>
               </div>
-              <p class="projects-gallery__label tag-label">Квартиры и студии</p>
-              <p class="projects-gallery__desc">3-х комнатная квартира 120 м², Красногорский бульвар 34</p>
+              <p class="gallery__tag tag tag--float">Квартиры и студии</p>
+              <p class="gallery__desc">3-х комнатная квартира 120 м², Красногорский бульвар 34</p>
             </div>
-            <div class="projects-gallery__item">
+            <div class="gallery__item">
               <div class="gallery-slider slider">
                 <!-- Slider main container -->
                 <div class="swiper-container slider__container">
@@ -603,20 +611,20 @@
                     </div>
                   </div>
                   <!-- If we need navigation buttons -->
-                  <button class="swiper-button-prev slider__btn slider__btn--prev" aria-label="Переключить на предидущий слайд">
-                    <svg class="icon icon-arrow icon-arrow--white">
+                  <button class="swiper-button-prev slider__btn slider__btn--fill-round slider__btn--prev" aria-label="Переключить на предидущий слайд">
+                    <svg class="icon icon-arrow">
                       <use xlink:href="img/design/symbol_sprite.svg#_arrow-left"/>
                     </svg>
                   </button>
-                  <button class="swiper-button-next slider__btn slider__btn--next" aria-label="Переключить на следующий слайд">
-                    <svg class="icon icon-arrow icon-arrow--white">
+                  <button class="swiper-button-next slider__btn slider__btn--fill-round slider__btn--next" aria-label="Переключить на следующий слайд">
+                    <svg class="icon icon-arrow">
                       <use xlink:href="img/design/symbol_sprite.svg#_arrow-right"/>
                     </svg>
                   </button>
                 </div>
               </div>
-              <p class="projects-gallery__label tag-label">Коттеджи и таунхаусы</p>
-              <p class="projects-gallery__desc">Коттедж 700 м², ул. Бабакино</p>
+              <p class="gallery__tag tag tag--float">Коттеджи и таунхаусы</p>
+              <p class="gallery__desc">Коттедж 700 м², ул. Бабакино</p>
             </div>
           </div>
         </div>
@@ -624,23 +632,22 @@
         
         <div class="feedback-wrap projects__feedback">
           <div class="container">
-            <section class="feedback feedback--colored" id="feedback">
+            <div class="feedback feedback--fill" id="feedback">
               <div class="feedback__inner">
-                <h3 class="feedback__title">Запишитесь на просмотр объектов, которые сейчас в работе</h3>
+                <h2 class="feedback__title">Запишитесь на просмотр объектов, которые сейчас в работе</h2>
             
-                <form action="action.php" method="GET" class="form">
-                  <label class="form__field-label"><input class="input-field input-field--white" type="text" name="Name" placeholder="Имя" maxlength="100" required></label>
-            
-                  <label class="form__field-label"><input class="input-field input-field--white" type="tel" name="Phone number" placeholder="Телефон" maxlength="100" required pattern="[0-9]"></label>
+                <form action="action.php" method="GET" class="form form--wide">
+                  <input class="input input--light form__input form__input" type="text" name="Name" placeholder="Имя" maxlength="100" required>
+                  <input class="input input--light form__input form__input" type="tel" name="Phone number" placeholder="Телефон" maxlength="100" required pattern="[0-9]">
                   
                   <footer class="form__footer">
                     <button class="btn btn--fill btn--fill-white form__btn">Обсудить проект</button>
-                    <p class="form__policy">Нажимая на кнопку «Записаться», вы соглашаетесь с нашей <a class="form__link" href="">Политикой конфиденциальности</a></p>
+                    <p class="form__policy form__policy">Нажимая на кнопку «Записаться», вы соглашаетесь с нашей <a class="form__link" href="">Политикой конфиденциальности</a></p>
                   </footer>
                 </form>
             
               </div>
-            </section>
+            </div>
           </div>
         </div>
 
@@ -654,56 +661,56 @@
                   <div class="swiper-wrapper slider__slides-wrapper">
                       <!-- Slides -->
                       <div class="swiper-slide slider__slide our-team-slider__slide">
-                        <a class="team-member" href="#">
-                          <div class="team-member__pic"><img src="img/content/avatar1.jpg" alt=""></div>
-                          <p class="team-member__name"><span>Марина <br> Афанасьева</span></p>
+                        <a class="manager" href="#">
+                          <div class="manager__pic"><img src="img/content/avatar1.jpg" alt=""></div>
+                          <p class="manager__name"><span>Марина <br> Афанасьева</span></p>
                         </a>
                       </div>
                       <div class="swiper-slide slider__slide our-team-slider__slide">
-                        <a class="team-member" href="#">
-                          <div class="team-member__pic"><img src="img/content/avatar2.jpg" alt=""></div>
-                          <p class="team-member__name"><span>Максим <br> Свиридов</span></p>
+                        <a class="manager" href="#">
+                          <div class="manager__pic"><img src="img/content/avatar2.jpg" alt=""></div>
+                          <p class="manager__name"><span>Максим <br> Свиридов</span></p>
                         </a>
                       </div>
                       <div class="swiper-slide slider__slide our-team-slider__slide">
-                        <a class="team-member" href="#">
-                          <div class="team-member__pic"><img src="img/content/avatar3.jpg" alt=""></div>
-                          <p class="team-member__name"><span>Павел <br> Христенко</span></p>
+                        <a class="manager" href="#">
+                          <div class="manager__pic"><img src="img/content/avatar3.jpg" alt=""></div>
+                          <p class="manager__name"><span>Павел <br> Христенко</span></p>
                         </a>
                       </div>
                       <div class="swiper-slide slider__slide our-team-slider__slide">
-                        <a class="team-member" href="#">
-                          <div class="team-member__pic"><img src="img/content/avatar4.jpg" alt=""></div>
-                          <p class="team-member__name"><span>Павел <br> Христенко</span></p>
+                        <a class="manager" href="#">
+                          <div class="manager__pic"><img src="img/content/avatar4.jpg" alt=""></div>
+                          <p class="manager__name"><span>Павел <br> Христенко</span></p>
                         </a>
                       </div>
                       <div class="swiper-slide slider__slide our-team-slider__slide">
-                        <a class="team-member" href="#">
-                          <div class="team-member__pic"><img src="img/content/avatar5.jpg" alt=""></div>
-                          <p class="team-member__name"><span>Антон <br> Севидов</span></p>
+                        <a class="manager" href="#">
+                          <div class="manager__pic"><img src="img/content/avatar5.jpg" alt=""></div>
+                          <p class="manager__name"><span>Антон <br> Севидов</span></p>
                         </a>
                       </div>
                       <div class="swiper-slide slider__slide our-team-slider__slide">
-                        <a class="team-member" href="#">
-                          <div class="team-member__pic"><img src="img/content/avatar1.jpg" alt=""></div>
-                          <p class="team-member__name"><span>Марина <br> Афанасьева</span></p>
+                        <a class="manager" href="#">
+                          <div class="manager__pic"><img src="img/content/avatar1.jpg" alt=""></div>
+                          <p class="manager__name"><span>Марина <br> Афанасьева</span></p>
                         </a>
                       </div><div class="swiper-slide slider__slide our-team-slider__slide">
-                        <a class="team-member" href="#">
-                          <div class="team-member__pic"><img src="img/content/avatar4.jpg" alt=""></div>
-                          <p class="team-member__name"><span>Павел <br> Христенко</span></p>
+                        <a class="manager" href="#">
+                          <div class="manager__pic"><img src="img/content/avatar4.jpg" alt=""></div>
+                          <p class="manager__name"><span>Павел <br> Христенко</span></p>
                         </a>
                       </div>
                       <div class="swiper-slide slider__slide our-team-slider__slide">
-                        <a class="team-member" href="#">
-                          <div class="team-member__pic"><img src="img/content/avatar5.jpg" alt=""></div>
-                          <p class="team-member__name"><span>Антон <br> Севидов</span></p>
+                        <a class="manager" href="#">
+                          <div class="manager__pic"><img src="img/content/avatar5.jpg" alt=""></div>
+                          <p class="manager__name"><span>Антон <br> Севидов</span></p>
                         </a>
                       </div>
                       <div class="swiper-slide slider__slide our-team-slider__slide">
-                        <a class="team-member" href="#">
-                          <div class="team-member__pic"><img src="img/content/avatar1.jpg" alt=""></div>
-                          <p class="team-member__name"><span>Марина <br> Афанасьева</span></p>
+                        <a class="manager" href="#">
+                          <div class="manager__pic"><img src="img/content/avatar1.jpg" alt=""></div>
+                          <p class="manager__name"><span>Марина <br> Афанасьева</span></p>
                         </a>
                       </div>
                       
@@ -721,78 +728,61 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
       
       <div class="container">
-        <div class="main-page__blog blog js-jump">
-          <header class="blog__header">
-            <h2 class="blog__title">Блог</h2>
-            <a href="blog.html" class="link link--framed link-more" data-jump data-jump-to=".blog.js-jump 2 600">Все публикации</a>
+        <div class="main-page__blog js-jump">
+          <header class="main-page__blog-header">
+            <h2 class="main-page__blog-title">Блог</h2>
+            <a href="blog.html" class="link link--framed link-more" data-jump data-jump-to=".main-page__blog.js-jump 2 600">Все публикации</a>
           </header>
         
-          <div class="blog__previews blog-previews">
-            <div class="slider blog-previews-slider">
-              <!-- Slider main container -->
-              <div class="swiper-container slider__container">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper slider__slides-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide slider__slide">
-                    <div class="blog__previews-item">
-                      <div class="article-preview article-preview--vrt">
-                        <img class="article-preview__img" src="img/content/blog-preview1.jpg" alt="">
-                        <div class="article-preview__info">
-                          <time class="article-preview__date" datetime="2020-03-18 19:00">18 марта</time>
-                          <a href="" class="article-preview__tag-label tag-label tag-label--link">Статьи</a>
-                        </div>
-                        <p class="article-preview__desc">Применение современных технологий в строительстве</p>
-                        <a href="" class="article-preview__link link link-more">Подробнее</a>
-                      </div>
-                    </div>
+          <div class="slider blog-preview-slider">
+            <!-- Slider main container -->
+            <div class="swiper-container slider__container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper slider__slides-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide slider__slide">
+                  <div class="article-preview-vrt">
+                    <img class="article-preview-vrt__img" src="img/content/blog-preview1.jpg" alt="">
+                    <time class="article-preview-vrt__date" datetime="2020-03-18 19:00">18 марта</time>
+                    <span class="tag tag--float article-preview-vrt__tag">Статьи</span>
+                    <p class="article-preview-vrt__desc">Применение современных технологий в строительстве</p>
+                    <a href="" class="article-preview-vrt__link link link-more">Подробнее</a>
                   </div>
-                  <div class="swiper-slide slider__slide">
-                    <div class="blog__previews-item">
-                      <div class="article-preview article-preview--vrt">
-                        <img class="article-preview__img" src="img/content/blog-preview2.jpg" alt="">
-                        <div class="article-preview__info">
-                          <time class="article-preview__date" datetime="2020-03-12 19:00">12 марта</time>
-                          <a href="" class="article-preview__tag-label tag-label tag-label--link">Статьи</a>
-                        </div>
-                        <p class="article-preview__desc">Приобретены новые штукатурные станции</p>
-                        <a href="" class="article-preview__link link link-more">Подробнее</a>
-                      </div>
-                    </div>
+                </div>
+                <div class="swiper-slide slider__slide">
+                  <div class="article-preview-vrt">
+                    <img class="article-preview-vrt__img" src="img/content/blog-preview2.jpg" alt="">
+                    <time class="article-preview-vrt__date" datetime="2020-03-12 19:00">12 марта</time>
+                    <span class="tag tag--float article-preview-vrt__tag">Статьи</span>
+                    <p class="article-preview-vrt__desc">Приобретены новые штукатурные станции</p>
+                    <a href="" class="article-preview-vrt__link link link-more">Подробнее</a>
                   </div>
-                  <div class="swiper-slide slider__slide">
-                    <div class="blog__previews-item">
-                      <div class="article-preview article-preview--vrt">
-                        <img class="article-preview__img" src="img/content/blog-preview3.jpg" alt="">
-                        <div class="article-preview__info">
-                          <time class="article-preview__date" datetime="2020-01-20 19:00">20 января</time>
-                          <a href="" class="article-preview__tag-label tag-label tag-label--link">Новости</a>
-                        </div>
-                        <p class="article-preview__desc">Приобретены новые штукатурные станции и материалы</p>
-                        <a href="" class="article-preview__link link link-more">Подробнее</a>
-                      </div>
-                    </div>
+                </div>
+                <div class="swiper-slide slider__slide">
+                  <div class="article-preview-vrt">
+                    <img class="article-preview-vrt__img" src="img/content/blog-preview3.jpg" alt="">
+                    <time class="article-preview-vrt__date" datetime="2020-01-20 19:00">20 января</time>
+                    <span class="tag tag--float article-preview-vrt__tag">Новости</span>
+                    <p class="article-preview-vrt__desc">Приобретены новые штукатурные станции и материалы</p>
+                    <a href="" class="article-preview-vrt__link link link-more">Подробнее</a>
                   </div>
-                  <div class="swiper-slide slider__slide">
-                    <div class="blog__previews-item">
-                      <div class="article-preview article-preview--vrt">
-                        <img class="article-preview__img" src="img/content/blog-preview4.jpg" alt="">
-                        <div class="article-preview__info">
-                          <time class="article-preview__date" datetime="2020-03-18 14:00">18 марта</time>
-                          <a href="" class="article-preview__tag-label tag-label tag-label--link">Статьи</a>
-                        </div>
-                        <p class="article-preview__desc">Применение современных технологий в строительстве</p>
-                        <a href="" class="article-preview__link link link-more">Подробнее</a>
-                      </div>
-                    </div>
+                </div>
+                <div class="swiper-slide slider__slide">
+                  <div class="article-preview-vrt">
+                    <img class="article-preview-vrt__img" src="img/content/blog-preview4.jpg" alt="">
+                    <time class="article-preview-vrt__date" datetime="2020-03-18 14:00">18 марта</time>
+                    <span class="tag tag--float article-preview-vrt__tag">Статьи</span>
+                    <p class="article-preview-vrt__desc">Применение современных технологий в строительстве</p>
+                    <a href="" class="article-preview-vrt__link link link-more">Подробнее</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </main>
@@ -850,7 +840,7 @@
                 <a href="" class="menu__link footer__link">Акции</a>
               </li>
               <li class="menu__item footer__list-item">
-                <a href="" class="menu__link footer__link">Блог</a>
+                <a href="blog.html" class="menu__link footer__link">Блог</a>
               </li>
               <li class="menu__item footer__list-item">
                 <a href="technology.html" class="menu__link footer__link">Технологии</a>
@@ -871,19 +861,19 @@
           </nav>
           <ul class="footer__list">
             <li class="footer__list-item">Ремонт под ключ</li>
-            <li class="footer__list-item"><a href="" class="footer__link">Стандарт — от 9000 руб / м²</a></li>
-            <li class="footer__list-item"><a href="" class="footer__link">Комфорт — от 11 000 руб / м²</a></li>
-            <li class="footer__list-item"><a href="" class="footer__link">Бизнес — от 14 000 руб / м²</a></li>
-            <li class="footer__list-item"><a href="" class="footer__link">Ремонт санузлов</a></li>
-            <li class="footer__list-item"><a href="" class="footer__link">Косметический ремонт</a></li>
+            <li class="footer__list-item"><a href="card-repair.html" class="footer__link">Стандарт — от 9000 руб / м²</a></li>
+            <li class="footer__list-item"><a href="card-repair.html" class="footer__link">Комфорт — от 11 000 руб / м²</a></li>
+            <li class="footer__list-item"><a href="card-repair.html" class="footer__link">Бизнес — от 14 000 руб / м²</a></li>
+            <li class="footer__list-item"><a href="card-repair.html" class="footer__link">Ремонт санузлов</a></li>
+            <li class="footer__list-item"><a href="card-repair.html" class="footer__link">Косметический ремонт</a></li>
           </ul>
           <ul class="footer__list">
             <li class="footer__list-item">Дизайн интерьера</li>
-            <li class="footer__list-item"><a href="" class="footer__link">Дизайн-проект под ключ</a></li>
-            <li class="footer__list-item"><a href="" class="footer__link">Базовый дизайн-проект</a></li>
-            <li class="footer__list-item"><a href="" class="footer__link">3-D визуализация</a></li>
-            <li class="footer__list-item"><a href="" class="footer__link">Авторский надзор</a></li>
-            <li class="footer__list-item"><a href="" class="footer__link">Комплектация объекта</a></li>
+            <li class="footer__list-item"><a href="card-design.html" class="footer__link">Дизайн-проект под ключ</a></li>
+            <li class="footer__list-item"><a href="card-design.html" class="footer__link">Базовый дизайн-проект</a></li>
+            <li class="footer__list-item"><a href="card-design.html" class="footer__link">3-D визуализация</a></li>
+            <li class="footer__list-item"><a href="card-design.html" class="footer__link">Авторский надзор</a></li>
+            <li class="footer__list-item"><a href="card-design.html" class="footer__link">Комплектация объекта</a></li>
           </ul>
         </div>
     

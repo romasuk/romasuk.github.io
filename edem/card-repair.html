@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- special for IE -->
+  <meta name="format-detection" content="telephone=no"> <!-- for Safari -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ремонт и отделка квартир, коттеджей, 
+  офисов в Москве и Московской области"> <!-- maxLength = 150 -->
+  <title>EDEM.Ремонт.Страница услуги</title> <!-- maxLength = 65 -->
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#00ADB5">
+  
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- IE HACK FOR CSS-->
+  <script>
+    document.documentElement.setAttribute('data-useragent', navigator.userAgent);
+  </script>
+</head>
+<body class="page card-page">
+    <header class="header">
+      <div class="header__top-row">
+  
+        <div class="container">
+          <div class="header__inner">
+  
+            <nav class="menu header-menu" data-jump data-jump-to=".drop-content__inner.js-jump 1 1100">
+              <ul class="menu__list header-menu__list">
+                <li class="menu__item header-menu__item">
+                  <a href="blog.html" class="menu__link header-menu__link">Блог</a>
+                </li>
+                <li class="menu__item header-menu__item">
+                  <a href="technology.html" class="menu__link header-menu__link">Технологии</a>
+                </li>
+                <li class="menu__item header-menu__item">
+                  <a href="" class="menu__link header-menu__link">Частые вопросы</a>
+                </li>
+                <li class="menu__item header-menu__item">
+                  <a href="about.html" class="menu__link header-menu__link">О компании</a>
+                </li>
+                <li class="menu__item header-menu__item">
+                  <a href="" class="menu__link header-menu__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+  
+            <div class="header__work-time">Пн – Пт / с 9:00 до 18:00</div>
+  
+          </div>
+        </div>
+      </div>
+      <!-- end .header__top-row -->
+  
+      <div class="container">
+        <div class="header__inner header__bottom-row js-jump">
+  
+          <div class="header__logo-wrap">
+            <a href="/" class="logo">
+              <img class="logo__img header__logo-img" src="img/content/logo.svg" alt="Логотип компании ЕДЕМ">
+              <div class="logo__txt">
+                <p>Ремонт и отделка квартир, коттеджей, офисов в Москве и Московской области</p>
+              </div>
+            </a>
+          </div>
+  
+        <button class="burger" title="Кнопка открытия и закрытия навигации" aria-label="Кнопка открытия и закрытия меню       ">
+          <span class="burger__toggle"></span>
+        </button>
+        <div class="header__main-menu-wrap drop-content">
+          <div class="drop-content__inner js-jump">
+  
+            <nav class="header__main-menu main-menu">
+              <ul class="main-menu__list">
+                <li class="main-menu__item">
+                  <ul class="main-menu__inner-list">
+                    <li class="main-menu__inner-item">
+                      <a href="services.html" class="main-menu__link main-menu__inner-link">Услуги</a>
+                    </li>
+                    <li class="main-menu__inner-item">
+                      <a href="projects.html" class="main-menu__link main-menu__inner-link">Проекты</a>
+                    </li>
+                    <li class="main-menu__inner-item">
+                      <a href="" class="main-menu__link main-menu__inner-link">Акции</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="main-menu__item main-menu__work">
+                  <a href="" class="main-menu__link main-menu__work-link">Проекты в работе <sup>06</sup></a>
+                </li>
+                <li class="main-menu__item main-menu__repair-calc">
+                  <a href="" class="main-menu__link">Калькулятор ремонта</a>
+                </li>
+                <li class="main-menu__item">
+                  <div class="main-menu__tel">
+                    <a href="tel:+74951157103" class="main-menu__tel-link" data-jump data-jump-to=".header__bottom-row.js-jump 1 1100" aria-label="Вы можете связаться с нами по нажатию на кнопку">
+                      <span class="main-menu__tel-num">+7 495 115 71 03</span>
+                    </a>
+                    <a href="#feedback" class="main-menu__btn btn " data-jump data-jump-to=".drop-content__inner.js-jump 2 1100">
+                      Заказать звонок
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <div class="contacts">
+              <ul class="contacts__tel-list">
+                <li class="contacts__tel-item">
+                  <a href="tel:+74951157103" class="contacts__tel-link tel-link">+7 (495) 115 71 03</a>
+                </li>
+                <li class="contacts__tel-item">
+                  <a href="tel:+79251337770" class="contacts__tel-link tel-link">+7 (925) 133 77 70</a>
+                </li>
+              </ul>
+            
+              <address class="contacts__address">
+                <a href="mailto:info@edem-sk.pro" class="contacts__address-link">info@edem-sk.pro</a>
+                <p class="contacts__address-txt">
+                  119331, Москва,<br>
+                  пр. Вернадского  21к3, офис 603
+                </p>
+              </address>
+            
+              <ul class="contacts__social-list">
+                
+                <li class="contacts__social-item">
+                  <a href="" class="contacts__social-link" aria-label="Переход на страницу телеграма  ">
+                    <svg class="icon icon-social">
+                      <use xlink:href="img/design/symbol_sprite.svg#_insta"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contacts__social-item">
+                  <a href="" class="contacts__social-link" aria-label="Переход на страницу телеграма  ">
+                    <svg class="icon icon-social icon-telegram">
+                      <use xlink:href="img/design/symbol_sprite.svg#_telegram"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </header>
+  
+  <div class="card-page__breadcrumbs">
+    <div class="breadcrumbs page-secondary__breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">
+            Эдем
+          </a></li>
+          <li class="breadcrumbs__item"><span class="breadcrumbs__item-separator">/</span><a href="" class="breadcrumbs__link">Услуги</a></li>
+          <li class="breadcrumbs__item"><span class="breadcrumbs__item-separator">/</span><a href="" class="breadcrumbs__link">Стандарт — от 9000 руб / м²</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <main class="page__body">
+    <div class="container">
+      
+      <div class="card">
+        <div class="card__content">
+          <header class="card__content-header">
+            <h1 class="card-page__title">Стандарт — от 9000 руб / м²</h1>
+            <p class="card__desc" data-jump data-jump-to=".card__gallery.js-jump 2 600">В ремонте класса «Стандарт» применяются стандартные решения с   использованием простых и доступных отделочных материалов</p>
+          </header>
+
+          <div class="card__gallery js-jump">
+                    <div class="gallery-slider card-slider slider">
+                      <!-- Slider main container -->
+                      <div class="swiper-container slider__container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper slider__slides-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide slider__slide">
+                            <img class="slider__img lazyload"
+                            src="img/content/project5_img_640.jpg"
+                            alt="Красивый дизайн квартиры в стиле лофт"
+                            data-srcset="img/content/project1_img_640.jpg 640w,
+                            img/content/project5_img_920.jpg 920w,
+                            img/content/project5_img_1220.jpg 1220w"
+                            data-sizes="(max-width: 599px) 100vw, 50vw">
+                          </div>
+                          <div class="swiper-slide slider__slide">
+                            <img class="slider__img lazyload"
+                            src="img/content/project1_img_640.jpg"
+                            alt="Красивый дизайн квартиры в стиле лофт"
+                            data-srcset="img/content/project1_img_640.jpg 640w,
+                            img/content/project1_img_920.jpg 920w,
+                            img/content/project1_img_1220.jpg 1220w"
+                            data-sizes="(max-width: 599px) 100vw, 50vw">
+                          </div>
+                          <div class="swiper-slide slider__slide">
+                            <img class="slider__img lazyload"
+                            src="img/content/project2_img_640.jpg"
+                            alt="Красивый дизайн квартиры в стиле лофт"
+                            data-srcset="img/content/project2_img_640.jpg 640w,
+                            img/content/project2_img_920.jpg 920w,
+                            img/content/project2_img_1220.jpg 1220w"
+                            data-sizes="(max-width: 599px) 100vw, 50vw">
+                          </div>
+                          <div class="swiper-slide slider__slide">
+                            <img class="slider__img lazyload"
+                            src="img/content/project3_img_640.jpg"
+                            alt="Красивый дизайн квартиры в стиле лофт"
+                            data-srcset="img/content/project3_img_640.jpg 640w,
+                            img/content/project3_img_920.jpg 920w,
+                            img/content/project3_img_1220.jpg 1220w"
+                            data-sizes="(max-width: 599px) 100vw, 50vw">
+                          </div>
+                          <div class="swiper-slide slider__slide">
+                            <img class="slider__img lazyload"
+                            src="img/content/project4_img_640.jpg"
+                            alt="Красивый дизайн квартиры в стиле лофт"
+                            data-srcset="img/content/project4_img_640.jpg 640w,
+                            img/content/project4_img_920.jpg 920w,
+                            img/content/project4_img_1220.jpg 1220w"
+                            data-sizes="(max-width: 599px) 100vw, 50vw">
+                          </div>
+                        </div>
+                      </div>
+                        <div class="swiper-pagination slider__pagination"></div>
+                        <!-- If we need navigation buttons -->
+                        <button class="swiper-button-prev slider__btn slider__btn--fill-round slider__btn--prev" aria-label="Переключить на предидущий слайд">
+                          <svg class="icon icon-arrow">
+                            <use xlink:href="img/design/symbol_sprite.svg#_arrow-left"/>
+                          </svg>
+                        </button>
+                        <button class="swiper-button-next slider__btn slider__btn--fill-round slider__btn--next" aria-label="Переключить на следующий слайд">
+                          <svg class="icon icon-arrow">
+                            <use xlink:href="img/design/symbol_sprite.svg#_arrow-right"/>
+                          </svg>
+                        </button>
+                    </div>
+            <p class="card__gallery-desc">Примеры работ класса Стандарт</p>
+          </div>
+          
+          <div class="card__calc">
+            <div class="calc">
+              <h2 class="calc__title">Предварительный расчёт ремонтно-отделочных работ</h2>
+            
+              <form action="calc.php" method="GET" class="calc-form form">
+                <select name="Тип" id="houseType" class="select form__select calc-form__select">
+                  <option selected disabled>Тип обьекта</option>
+                  <option value="Дом">Дом</option>
+                  <option value="Квартира">Квартира</option>
+                  <option value="Офис">Офис</option>
+                </select>
+                <select name="Материал" id="houseMateria" class="select form__select calc-form__select">
+                  <option selected disabled>Материал дома</option>
+                  <option value="Кирпич">Кирпич</option>
+                  <option value="Пенобетон">Пенобетон</option>
+                  <option value="Монолит-плита">Монолит-плита</option>
+                </select>
+                <select name="Площадь" id="houseSquare" class="select form__select calc-form__select">
+                  <option selected disabled>Площадь</option>
+                  <option value="Дом">Меньше 60</option>
+                  <option value="Квартира">Больше 60</option>
+                  <option value="Офис">Больше 100</option>
+                </select>
+                
+                <input class="input input--colored form__input calc-form__input" type="text" name="Name" placeholder="Имя" maxlength="100" required>
+                <input type="email" class="input input--colored form__input calc-form__input" name="Email" placeholder="Email" requried>
+                <input class="input input--colored form__input calc-form__input" type="tel" name="Phone number" placeholder="Телефон" maxlength="100" required pattern="[0-9]">
+            
+                <footer class="form__footer">
+                  <button class="btn btn--fill btn--fill-prim btn--animated form__btn">Рассчитать</button>
+                  <p class="form__policy calc-form__policy">Нажимая на кнопку «Записаться», вы соглашаетесь с нашей <a class="form__link" href="">Политикой конфиденциальности</a></p>
+                </footer>
+              </form>
+            </div>
+          </div>
+
+          <div class="card__accordion">
+            <div class="accordions">
+              <h2 class="accordions__title">Состав класса «Стандарт»</h2>
+            
+              <div class="accordions__list">
+                <div class="accordions__item accordion">
+                  <button class="accordion__panel">Разработка дизайн-проекта, 3D-визуализация и подбор материалов</button>
+                  <div class="accordion__drop">        
+                    <div class="accordion__txt">
+                      <ul class="styled-list">
+                        <li>учитываются все пожелания;</li>
+                        <li>результат видно заранее;</li>
+                        <li>все материалы подобраны;</li>
+                        <li>отсутствие необоснованных трат.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordions__item accordion">
+                  <button class="accordion__panel">Составление сметы, согласование работ, материалов, подписание договора</button>
+                  <div class="accordion__drop">        
+                    <div class="accordion__txt">
+                      <ul class="styled-list">
+                        <li>учитываются все пожелания;</li>
+                        <li>результат видно заранее;</li>
+                        <li>все материалы подобраны;</li>
+                        <li>отсутствие необоснованных трат.</li>
+                      </ul>
+                      <p>В ремонте класса «Стандарт» применяются стандартные решения с использованиепростых и доступных отделочных материалов</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordions__item accordion">
+                  <button class="accordion__panel">Закупка и доставка материалов</button>
+                  <div class="accordion__drop">        
+                    <div class="accordion__txt">
+                      <ul class="styled-list">
+                        <li>учитываются все пожелания;</li>
+                        <li>результат видно заранее;</li>
+                        <li>все материалы подобраны;</li>
+                        <li>отсутствие необоснованных трат.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordions__item accordion">
+                  <button class="accordion__panel">Подготовительные работы</button>
+                  <div class="accordion__drop">        
+                    <div class="accordion__txt">
+                      <ul class="styled-list">
+                        <li>учитываются все пожелания;</li>
+                        <li>результат видно заранее;</li>
+                        <li>все материалы подобраны;</li>
+                        <li>отсутствие необоснованных трат.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordions__item accordion">
+                  <button class="accordion__panel">Демонтажные работы</button>
+                  <div class="accordion__drop">        
+                    <div class="accordion__txt">
+                      <ul class="styled-list">
+                        <li>учитываются все пожелания;</li>
+                        <li>результат видно заранее;</li>
+                        <li>все материалы подобраны;</li>
+                        <li>отсутствие необоснованных трат.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordions__item accordion">
+                  <button class="accordion__panel">Возведение перегородок</button>
+                  <div class="accordion__drop">        
+                    <div class="accordion__txt">
+                      <ul class="styled-list">
+                        <li>учитываются все пожелания;</li>
+                        <li>результат видно заранее;</li>
+                        <li>все материалы подобраны;</li>
+                        <li>отсутствие необоснованных трат.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordions__item accordion">
+                  <button class="accordion__panel">Штукатурные работы</button>
+                  <div class="accordion__drop">        
+                    <div class="accordion__txt">
+                      <ul class="styled-list">
+                        <li>учитываются все пожелания;</li>
+                        <li>результат видно заранее;</li>
+                        <li>все материалы подобраны;</li>
+                        <li>отсутствие необоснованных трат.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordions__item accordion">
+                  <button class="accordion__panel">Монтаж инженерных коммуникаций</button>
+                  <div class="accordion__drop">        
+                    <div class="accordion__txt">
+                      <ul class="styled-list">
+                        <li>учитываются все пожелания;</li>
+                        <li>результат видно заранее;</li>
+                        <li>все материалы подобраны;</li>
+                        <li>отсутствие необоснованных трат.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordions__item accordion">
+                  <button class="accordion__panel">Устройство стяжки пола и гидроизоляция</button>
+                  <div class="accordion__drop">        
+                    <div class="accordion__txt">
+                      <ul class="styled-list">
+                        <li>учитываются все пожелания;</li>
+                        <li>результат видно заранее;</li>
+                        <li>все материалы подобраны;</li>
+                        <li>отсутствие необоснованных трат.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordions__item accordion">
+                  <button class="accordion__panel">Укладка плитки</button>
+                  <div class="accordion__drop">        
+                    <div class="accordion__txt">
+                      <ul class="styled-list">
+                        <li>учитываются все пожелания;</li>
+                        <li>результат видно заранее;</li>
+                        <li>все материалы подобраны;</li>
+                        <li>отсутствие необоснованных трат.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordions__item accordion">
+                  <button class="accordion__panel">Малярные работы</button>
+                  <div class="accordion__drop">        
+                    <div class="accordion__txt">
+                      <ul class="styled-list">
+                        <li>учитываются все пожелания;</li>
+                        <li>результат видно заранее;</li>
+                        <li>все материалы подобраны;</li>
+                        <li>отсутствие необоснованных трат.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordions__item accordion">
+                  <button class="accordion__panel">Оконные откосы</button>
+                  <div class="accordion__drop">        
+                    <div class="accordion__txt">
+                      <ul class="styled-list">
+                        <li>учитываются все пожелания;</li>
+                        <li>результат видно заранее;</li>
+                        <li>все материалы подобраны;</li>
+                        <li>отсутствие необоснованных трат.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordions__item accordion">
+                  <button class="accordion__panel">Укладка напольного покрытия</button>
+                  <div class="accordion__drop">        
+                    <div class="accordion__txt">
+                      <ul class="styled-list">
+                        <li>учитываются все пожелания;</li>
+                        <li>результат видно заранее;</li>
+                        <li>все материалы подобраны;</li>
+                        <li>отсутствие необоснованных трат.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordions__item accordion">
+                  <button class="accordion__panel">Монтаж потолка</button>
+                  <div class="accordion__drop">        
+                    <div class="accordion__txt">
+                      <ul class="styled-list">
+                        <li>учитываются все пожелания;</li>
+                        <li>результат видно заранее;</li>
+                        <li>все материалы подобраны;</li>
+                        <li>отсутствие необоснованных трат.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordions__item accordion">
+                  <button class="accordion__panel">Установка освещения, розеток и выключателей</button>
+                  <div class="accordion__drop">        
+                    <div class="accordion__txt">
+                      <ul class="styled-list">
+                        <li>учитываются все пожелания;</li>
+                        <li>результат видно заранее;</li>
+                        <li>все материалы подобраны;</li>
+                        <li>отсутствие необоснованных трат.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordions__item accordion">
+                  <button class="accordion__panel">Монтаж сантехприборов</button>
+                  <div class="accordion__drop">        
+                    <div class="accordion__txt">
+                      <ul class="styled-list">
+                        <li>учитываются все пожелания;</li>
+                        <li>результат видно заранее;</li>
+                        <li>все материалы подобраны;</li>
+                        <li>отсутствие необоснованных трат.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordions__item accordion">
+                  <button class="accordion__panel">Общестроительные работы</button>
+                  <div class="accordion__drop">        
+                    <div class="accordion__txt">
+                      <ul class="styled-list">
+                        <li>учитываются все пожелания;</li>
+                        <li>результат видно заранее;</li>
+                        <li>все материалы подобраны;</li>
+                        <li>отсутствие необоснованных трат.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordions__item accordion">
+                  <button class="accordion__panel">Уборка</button>
+                  <div class="accordion__drop">        
+                    <div class="accordion__txt">
+                      <ul class="styled-list">
+                        <li>учитываются все пожелания;</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="card__sidebar nav-sidebar">
+          <a href="#feedback" class="btn btn--fill btn--fill-prim btn--animated nav-sidebar__btn" data-jump data-jump-to=".card__gallery.js-jump 3 900">Заказать услугу</a>
+          <ul class="nav-sidebar__list">
+            <li class="nav-sidebar__item"><a class="nav-sidebar__link is-active">Стандарт  — от 9000 руб / м²</a></li>
+            <li class="nav-sidebar__item"><a href="" class="nav-sidebar__link">Комфорт  — от 11 000 руб / м²</a></li>
+            <li class="nav-sidebar__item"><a href="" class="nav-sidebar__link">Бизнес  — от 14 000 руб / м²</a></li>
+            <li class="nav-sidebar__item"><a href="" class="nav-sidebar__link">Ремонт санузлов</a></li>
+            <li class="nav-sidebar__item"><a href="" class="nav-sidebar__link">Косметический ремонт</a></li>
+          </ul>
+        
+          <a href="" class="btn btn--fill btn--framed nav-sidebar__btn">Заказать рассчет</a>
+        </aside>
+      </div>
+
+    </div>
+  </main>
+  <div class="card-page__projects projects">
+    <header class="projects__header container">
+      <h2 class="projects__title">Наши проекты</h2>
+      <a href="projects.html" class="link link-more">Все проекты</a>
+    </header>
+
+    <div class="projects__gallery container">
+      <div class="gallery">
+        <div class="gallery__item">
+          <div class="gallery-slider slider">
+            <!-- Slider main container -->
+            <div class="swiper-container slider__container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper slider__slides-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide slider__slide">
+                  <img class="slider__img lazyload"
+                  src="img/content/project1_img_640.jpg"
+                  alt="Красивый дизайн квартиры в стиле лофт"
+                  data-srcset="img/content/project1_img_640.jpg 640w,
+                  img/content/project1_img_920.jpg 920w,
+                  img/content/project1_img_1220.jpg 1220w"
+                  data-sizes="(max-width: 599px) 100vw, 50vw">
+                </div>
+                <div class="swiper-slide slider__slide">
+                  <img class="slider__img lazyload"
+                  src="img/content/project2_img_640.jpg"
+                  alt="Красивый дизайн квартиры в стиле лофт"
+                  data-srcset="img/content/project2_img_640.jpg 640w,
+                  img/content/project2_img_920.jpg 920w,
+                  img/content/project2_img_1220.jpg 1220w"
+                  data-sizes="(max-width: 599px) 100vw, 50vw">
+                </div>
+                <div class="swiper-slide slider__slide">
+                  <img class="slider__img lazyload"
+                  src="img/content/project3_img_640.jpg"
+                  alt="Красивый дизайн квартиры в стиле лофт"
+                  data-srcset="img/content/project3_img_640.jpg 640w,
+                  img/content/project3_img_920.jpg 920w,
+                  img/content/project3_img_1220.jpg 1220w"
+                  data-sizes="(max-width: 599px) 100vw, 50vw">
+                </div>
+                <div class="swiper-slide slider__slide">
+                  <img class="slider__img lazyload"
+                  src="img/content/project4_img_640.jpg"
+                  alt="Красивый дизайн квартиры в стиле лофт"
+                  data-srcset="img/content/project4_img_640.jpg 640w,
+                  img/content/project4_img_920.jpg 920w,
+                  img/content/project4_img_1220.jpg 1220w"
+                  data-sizes="(max-width: 599px) 100vw, 50vw">
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <button class="swiper-button-prev slider__btn slider__btn
+      slider__btn--fill-round slider__btn--prev" aria-label="Переключить на предидущий слайд">
+                <svg class="icon icon-arrow">
+                  <use xlink:href="img/design/symbol_sprite.svg#_arrow-left"/>
+                </svg>
+              </button>
+              <button class="swiper-button-next slider__btn slider__btn
+      slider__btn--fill-round slider__btn--next" aria-label="Переключить на следующий слайд">
+                <svg class="icon icon-arrow">
+                  <use xlink:href="img/design/symbol_sprite.svg#_arrow-right"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <p class="gallery__label tag-label">Квартиры и студии</p>
+          <p class="gallery__desc">3-х комнатная квартира 120 м², Красногорский бульвар 34</p>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery-slider slider">
+            <!-- Slider main container -->
+            <div class="swiper-container slider__container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper slider__slides-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide slider__slide">
+                  <img class="slider__img lazyload"
+                  src="img/content/project2_img_640.jpg"
+                  alt="Красивый дизайн квартиры в стиле лофт"
+                  data-srcset="img/content/project2_img_640.jpg 640w,
+                  img/content/project2_img_920.jpg 920w,
+                  img/content/project2_img_1220.jpg 1220w"
+                  data-sizes="(max-width: 599px) 100vw, 50vw">
+                </div>
+                <div class="swiper-slide slider__slide">
+                  <img class="slider__img lazyload"
+                  src="img/content/project3_img_640.jpg"
+                  alt="Красивый дизайн квартиры в стиле лофт"
+                  data-srcset="img/content/project3_img_640.jpg 640w,
+                  img/content/project3_img_920.jpg 920w,
+                  img/content/project3_img_1220.jpg 1220w"
+                  data-sizes="(max-width: 599px) 100vw, 50vw">
+                </div>
+                <div class="swiper-slide slider__slide">
+                  <img class="slider__img lazyload"
+                  src="img/content/project4_img_640.jpg"
+                  alt="Красивый дизайн квартиры в стиле лофт"
+                  data-srcset="img/content/project4_img_640.jpg 640w,
+                  img/content/project4_img_920.jpg 920w,
+                  img/content/project4_img_1220.jpg 1220w"
+                  data-sizes="(max-width: 599px) 100vw, 50vw">
+                </div>
+                <div class="swiper-slide slider__slide">
+                  <img class="slider__img lazyload"
+                  src="img/content/project1_img_640.jpg"
+                  alt="Красивый дизайн квартиры в стиле лофт"
+                  data-srcset="img/content/project1_img_640.jpg 640w,
+                  img/content/project1_img_920.jpg 920w,
+                  img/content/project1_img_1220.jpg 1220w"
+                  data-sizes="(max-width: 599px) 100vw, 50vw">
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <button class="swiper-button-prev slider__btn slider__btn
+      slider__btn--fill-round slider__btn--prev" aria-label="Переключить на предидущий слайд">
+                <svg class="icon icon-arrow">
+                  <use xlink:href="img/design/symbol_sprite.svg#_arrow-left"/>
+                </svg>
+              </button>
+              <button class="swiper-button-next slider__btn slider__btn
+      slider__btn--fill-round slider__btn--next" aria-label="Переключить на следующий слайд">
+                <svg class="icon icon-arrow">
+                  <use xlink:href="img/design/symbol_sprite.svg#_arrow-right"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <p class="gallery__label tag-label">Коттеджи и таунхаусы</p>
+          <p class="gallery__desc">Коттедж 700 м², ул. Бабакино</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <div class="container">
+    <div class="page__feedback">
+      <div class="feedback feedback--fill" id="feedback">
+        <div class="feedback__inner">
+          <h2 class="feedback__title">Запишитесь на просмотр объектов, которые сейчас в работе</h2>
+      
+          <form action="action.php" method="GET" class="form form--wide">
+            <input class="input input--light form__input form__input" type="text" name="Name" placeholder="Имя" maxlength="100" required>
+            <input class="input input--light form__input form__input" type="tel" name="Phone number" placeholder="Телефон" maxlength="100" required pattern="[0-9]">
+            
+            <footer class="form__footer">
+              <button class="btn btn--fill btn--fill-white form__btn">Обсудить проект</button>
+              <p class="form__policy form__policy">Нажимая на кнопку «Записаться», вы соглашаетесь с нашей <a class="form__link" href="">Политикой конфиденциальности</a></p>
+            </footer>
+          </form>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page__footer footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__contacts">
+  
+          <a class="logo footer__logo">
+            <img class="logo__img" src="img/content/logo.svg" alt="Логотип компании ЕДЕМ">
+          </a>
+          <div class="contacts">
+            <ul class="contacts__tel-list">
+              <li class="contacts__tel-item">
+                <a href="tel:+74951157103" class="contacts__tel-link tel-link">+7 (495) 115 71 03</a>
+              </li>
+              <li class="contacts__tel-item">
+                <a href="tel:+79251337770" class="contacts__tel-link tel-link">+7 (925) 133 77 70</a>
+              </li>
+            </ul>
+          
+            <address class="contacts__address">
+              <a href="mailto:info@edem-sk.pro" class="contacts__address-link">info@edem-sk.pro</a>
+              <p class="contacts__address-txt">
+                119331, Москва,<br>
+                пр. Вернадского  21к3, офис 603
+              </p>
+            </address>
+          
+            <ul class="contacts__social-list">
+              
+              <li class="contacts__social-item">
+                <a href="" class="contacts__social-link" aria-label="Переход на страницу телеграма  ">
+                  <svg class="icon icon-social">
+                    <use xlink:href="img/design/symbol_sprite.svg#_insta"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__social-item">
+                <a href="" class="contacts__social-link" aria-label="Переход на страницу телеграма  ">
+                  <svg class="icon icon-social icon-telegram">
+                    <use xlink:href="img/design/symbol_sprite.svg#_telegram"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="menu footer__menu">
+          <ul class="menu__list">
+            <li class="menu__item footer__list-item">
+              <a href="" class="menu__link footer__link">Проекты</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="" class="menu__link footer__link">Акции</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="blog.html" class="menu__link footer__link">Блог</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="technology.html" class="menu__link footer__link">Технологии</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="" class="menu__link footer__link">Частые вопросы</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="about.html" class="menu__link footer__link">О компании</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="" class="menu__link footer__link">Контакты</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="" class="menu__link footer__link">Проекты в работе</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer__list">
+          <li class="footer__list-item">Ремонт под ключ</li>
+          <li class="footer__list-item"><a href="card-repair.html" class="footer__link">Стандарт — от 9000 руб / м²</a></li>
+          <li class="footer__list-item"><a href="card-repair.html" class="footer__link">Комфорт — от 11 000 руб / м²</a></li>
+          <li class="footer__list-item"><a href="card-repair.html" class="footer__link">Бизнес — от 14 000 руб / м²</a></li>
+          <li class="footer__list-item"><a href="card-repair.html" class="footer__link">Ремонт санузлов</a></li>
+          <li class="footer__list-item"><a href="card-repair.html" class="footer__link">Косметический ремонт</a></li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__list-item">Дизайн интерьера</li>
+          <li class="footer__list-item"><a href="card-design.html" class="footer__link">Дизайн-проект под ключ</a></li>
+          <li class="footer__list-item"><a href="card-design.html" class="footer__link">Базовый дизайн-проект</a></li>
+          <li class="footer__list-item"><a href="card-design.html" class="footer__link">3-D визуализация</a></li>
+          <li class="footer__list-item"><a href="card-design.html" class="footer__link">Авторский надзор</a></li>
+          <li class="footer__list-item"><a href="card-design.html" class="footer__link">Комплектация объекта</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer__copy-wrap">
+        <div class="footer__copy">
+          <p class="footer__copy-txt">&copy; 2020, Эдэм. Ремонт и отделка квартир, коттеджей, офисов в Москве и МО</p>
+          <a href="" class="footer__copy-link">Политика конфиденциальности</a>
+        </div>
+      </div>
+  
+    </div>
+  </footer>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/libs.js"></script>
+  <script src="js/common.min.js"></script>
+</body>
+</html>

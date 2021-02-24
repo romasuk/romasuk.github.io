@@ -3,58 +3,112 @@
 /* ===========================
   #SWIPER
 ============================= */
-// import Swiper, { Navigation, Pagination } from 'swiper';
-// Swiper.use([Navigation, Pagination])
 
-var gallerySlider = new Swiper('.projects-gallery .swiper-container', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  // Navigation arrows
-  navigation: {
-    nextEl: '.projects-gallery .swiper-button-next',
-    prevEl: '.projects-gallery .swiper-button-prev'
-  }
-});
-var teamSlider = new Swiper('.our-team-slider .swiper-container', {
-  direction: 'horizontal',
-  loop: true,
-  slidesPerView: 3,
-  breakpoints: {
-    // when window width is >= 900px
-    900: {
-      slidesPerView: 5,
-      spaceBetween: 45
+if (document.querySelector('.swiper-container')) {
+  // import Swiper, { Navigation, Pagination } from 'swiper';
+  // Swiper.use([Navigation, Pagination])
+  var gallerySlider = new Swiper('.projects__gallery .swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.projects__gallery .swiper-button-next',
+      prevEl: '.projects__gallery .swiper-button-prev'
     }
-  },
-  pagination: {
-    el: '.our-team-slider .swiper-pagination',
-    type: 'custom',
-    renderCustom: function renderCustom(swiper, current, total) {
-      if (current < 10) {
-        current = "0".concat(current);
+  });
+  var teamSlider = new Swiper('.our-team-slider .swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 3,
+    breakpoints: {
+      // when window width is >= 900px
+      900: {
+        slidesPerView: 5,
+        spaceBetween: 45
       }
+    },
+    pagination: {
+      el: '.our-team-slider .swiper-pagination',
+      type: 'custom',
+      renderCustom: function renderCustom(swiper, current, total) {
+        if (current < 10) {
+          current = "0".concat(current);
+        }
 
-      if (total < 10) {
-        total = "0".concat(total);
+        if (total < 10) {
+          total = "0".concat(total);
+        }
+
+        return "<span class=\"swiper-pagination-current\">".concat(current, "</span> &mdash; <span class=\"swiper-pagination-total\">").concat(total, "</span>");
       }
-
-      return "<span class=\"swiper-pagination-current\">".concat(current, "</span> &mdash; <span class=\"swiper-pagination-total\">").concat(total, "</span>");
+    },
+    navigation: {
+      nextEl: '.our-team-slider .swiper-button-next',
+      prevEl: '.our-team-slider .swiper-button-prev'
     }
-  },
-  navigation: {
-    nextEl: '.our-team-slider .swiper-button-next',
-    prevEl: '.our-team-slider .swiper-button-prev'
-  }
-});
-var blogPreviewsSlider = new Swiper('.blog-previews .swiper-container', {
-  slidesPerView: 'auto',
-  freeMode: true
-});
+  });
+  var blogPreviewsSlider = new Swiper('.main-page__blog .swiper-container', {
+    slidesPerView: 'auto',
+    freeMode: true
+  });
+  var cardSlider = new Swiper('.card-slider .swiper-container', {
+    slidesPerView: 1,
+    loop: true,
+    pagination: {
+      el: '.card-slider .swiper-pagination',
+      type: 'custom',
+      renderCustom: function renderCustom(swiper, current, total) {
+        if (current < 10) {
+          current = "0".concat(current);
+        }
+
+        if (total < 10) {
+          total = "0".concat(total);
+        }
+
+        return "<span class=\"swiper-pagination-current\">".concat(current, "</span> &mdash; <span class=\"swiper-pagination-total\">").concat(total, "</span>");
+      }
+    },
+    navigation: {
+      nextEl: '.card-slider .swiper-button-next',
+      prevEl: '.card-slider .swiper-button-prev'
+    }
+  });
+  var articleSlider = new Swiper('.article-slider .swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+    pagination: {
+      el: '.article-slider .swiper-pagination',
+      type: 'custom',
+      renderCustom: function renderCustom(swiper, current, total) {
+        if (current < 10) {
+          current = "0".concat(current);
+        }
+
+        if (total < 10) {
+          total = "0".concat(total);
+        }
+
+        return "<span class=\"swiper-pagination-current\">".concat(current, "</span> &mdash; <span class=\"swiper-pagination-total\">").concat(total, "</span>");
+      }
+    },
+    navigation: {
+      nextEl: '.article-slider .swiper-button-next',
+      prevEl: '.article-slider .swiper-button-prev'
+    }
+  });
+  var filterSlider = new Swiper('.filter__slider .swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 20
+  });
+}
 /* ===========================
   #SMOTH SCROLL
 ============================= */
 // import '../../node_modules/smoothscroll-for-websites/SmoothScroll.js';;
+
 
 window.addEventListener("load", function () {
   document.body.classList.add('page-load');
@@ -64,6 +118,10 @@ window.addEventListener("load", function () {
       topOffset = 0;
   /* ===========================
     #POLYFILLS
+  ============================= */
+
+  /* ===========================
+    #FILTER
   ============================= */
 
   /* ===========================
@@ -180,6 +238,24 @@ window.addEventListener("load", function () {
       elem.style.paddingRight = "".concat(scrollW, "px");
     });
   };
+  /* ===========================
+    #ACCORDION
+  ============================= */
+
+
+  var accordionsContainer = document.querySelector('.accordions');
+
+  if (accordionsContainer) {
+    accordionsContainer.addEventListener('click', function (e) {
+      if (e.target.closest('.accordion__panel')) {
+        var accordion = e.target.parentElement;
+
+        if (accordion.classList.contains('accordion')) {
+          accordion.classList.toggle('is-open');
+        }
+      }
+    });
+  }
   /* ===========================
     #BURGER / DROP MENU
   ============================= */
