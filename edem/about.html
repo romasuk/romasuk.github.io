@@ -36,7 +36,7 @@
                   <a href="" class="menu__link header-menu__link">Частые вопросы</a>
                 </li>
                 <li class="menu__item header-menu__item">
-                  <a href="about.html" class="menu__link header-menu__link">О компании</a>
+                  <a class="menu__link header-menu__link header-menu__link--active">О компании</a>
                 </li>
                 <li class="menu__item header-menu__item">
                   <a href="" class="menu__link header-menu__link">Контакты</a>
@@ -85,7 +85,7 @@
                   </ul>
                 </li>
                 <li class="main-menu__item main-menu__work">
-                  <a href="" class="main-menu__link main-menu__work-link">Проекты в работе <sup>06</sup></a>
+                  <a href="work-projects.html" class="main-menu__link main-menu__work-link">Проекты в работе <sup>06</sup></a>
                 </li>
                 <li class="main-menu__item main-menu__repair-calc">
                   <a href="" class="main-menu__link">Калькулятор ремонта</a>
@@ -144,75 +144,146 @@
       </div>
     </div>
   </header>
-  <div class="container">
-    <div class="about-page__inner">
-      <aside class="page__sidebar about-page__sidebar sidebar">
-        <ul class="sidebar__list"></ul>
-        <li class="sidebar__item"><a href="" class="sidebar__link">link_1</a></li>
-        <li class="sidebar__item"><a href="" class="sidebar__link">link_2</a></li>
-        <li class="sidebar__item"><a href="" class="sidebar__link">link_3</a></li>
-      </aside>
-
-      <main class="page__body about-page__body">
-        <div class="page__info">
-          <section class="page__info-garantee">
-            <h3 class="page__info-title">Гарантируем</h3>
-            <ul class="page__info-list">
-              <li class="page__info-item">Многоуровневый контроль качества</li>
-              <li class="page__info-item">Сроки и стоимость зафиксированы </li>
-              <li class="page__info-item">Оплата по факту выполнения этапа</li>
-              <li class="page__info-item">Персональный менеджер для вашего проекта</li>
-            </ul>
-          </section>
-
-          <section class="page__info-nums">
-            <h3 class="page__info-title">Мы в цифрах</h3>
-            <ul class="page__info-list">
-              <li class="page__info-item"><span class="page__info-num">72</span>сотрудника в штате</li>
-              <li class="page__info-item"><span class="page__info-num page__info-num--blue">320</span>завершенных проектов</li>
-              <li class="page__info-item"><span class="page__info-num">47%</span>клиентов по рекомендации</li>
-              <li class="page__info-item"><span class="page__info-num">5</span>дизайнеров</li>
-            </ul>
-          </section>
-
-          <div class="page__info-services services">
-            <section class="services__item">
-              <div class="services__item-inner services__design-inner">
-                <h3 class="services__title">Дизайн<br> интерьера</h3>
-                <div class="services__txt">
-                  <ul>
-                    <li>Дизайн-проект под ключ</li>
-                    <li>Базовый дизайн-проект</li>
-                    <li>3D визуализация</li>
-                    <li>Авторский надзор</li>
-                    <li>Комплектация объекта</li>
-                  </ul>
-                </div>
-                <a href="services.html" class="btn btn--animated btn--transparent services__btn">Смотреть услуги</a>
-              </div>
-            </section>
-            <section class="services__item">
-              <div class="services__item-inner services__repairs-inner">
-                <h3 class="services__title">Ремонт<br> под ключ</h3>
-                <div class="services__txt">
-                  <ul>
-                    <li>Ремонт под ключ</li>
-                    <li>Базовый ремонт</li>
-                    <li>3D визуализация</li>
-                    <li>Авторский надзор</li>
-                    <li>Комплектация объекта</li>
-                  </ul>
-                </div>
-                <a href="services.html" class="btn btn--animated btn--transparent services__btn">Смотреть услуги</a>
-              </div>
-            </section>
-          </div>
-      </div>
-        <!-- end .page__info -->
-      </main>
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">
+          Эдем
+        </a></li>
+        <li class="breadcrumbs__item"><span class="breadcrumbs__item-separator">/</span><a class="breadcrumbs__link">Частые вопросы</a></li>
+      </ul>
     </div>
   </div>
 
+  <div class="container">
+    <h1 class="page__title">О компании</h1>
+
+    <div class="about">
+      <aside class="nav-sidebar about__sidebar">
+        <ul class="nav-sidebar__list">
+          <li class="nav-sidebar__item"><a href="faq.html" class="nav-sidebar__link">Частые вопросы</a></li>
+          <li class="nav-sidebar__item"><a class="nav-sidebar__link is-active">О компании</a></li>
+          <li class="nav-sidebar__item"><a href="contacts.html" class="nav-sidebar__link">Контакты</a></li>
+        </ul>
+      </aside>
+      <main class="about__content">
+        <div class="about__txt">
+          <p>Строительная компания ЭДЕМ была открыта в 2009 году. С первого дня работы нашим приоритетом стало выполнение качественного ремонта, который бы учитывал все задумки и желания заказчика.</p>
+          <p>Уже более 11 лет нам удается поддерживать репутацию надежной строительной компании, всегда идущей навстречу клиенту.</p>
+        </div>
+        
+        <div class="about__team">
+          <div class="about__team-managers">
+            <div class="manager about__manager">
+              <div class="manager__pic"><img src="img/content/avatar1.jpg" alt="Марина Афанасьева. Руководитель проектов"></div>
+              <p class="manager__name">Марина Афанасьева</p>
+              <p class="manager__prof">Руководитель проектов</p>
+              <a class="link manager__email" href="mailto:ds@edem-sk.pro">ds@edem-sk.pro</a>
+            </div>
+            <div class="manager about__manager">
+              <div class="manager__pic"><img src="img/content/avatar2.jpg" alt="Станислав Петренко. Менеджер"></div>
+              <p class="manager__name">Станислав Петренко</p>
+              <p class="manager__prof">Менеджер</p>
+              <a class="link manager__email" href="mailto:ds@edem-sk.pro">ds@edem-sk.pro</a>
+            </div>
+            <div class="manager about__manager">
+              <div class="manager__pic"><img src="img/content/avatar3.jpg" alt="Павел Христенко. Дизайнер"></div>
+              <p class="manager__name">Павел Христенко</p>
+              <p class="manager__prof">Дизайнер</p>
+              <a class="link manager__email" href="mailto:ds@edem-sk.pro">ds@edem-sk.pro</a>
+            </div>
+            <div class="manager about__manager">
+              <div class="manager__pic"><img src="img/content/avatar4.jpg" alt="Дмитрий Свиридов. Руководитель проектов"></div>
+              <p class="manager__name">Дмитрий Свиридов</p>
+              <p class="manager__prof">Руководитель проектов</p>
+              <a class="link manager__email" href="mailto:ds@edem-sk.pro">ds@edem-sk.pro</a>
+            </div>
+            <div class="manager about__manager">
+              <div class="manager__pic"><img src="img/content/avatar5.jpg" alt="Антон Севидов. Дизайнер"></div>
+              <p class="manager__name">Антон Севидов</p>
+              <p class="manager__prof">Дизайнер</p>
+              <a class="link manager__email" href="mailto:ds@edem-sk.pro">ds@edem-sk.pro</a>
+            </div>
+            <div class="manager about__manager">
+              <div class="manager__pic"><img src="img/content/avatar1.jpg" alt="Марина Афанасьева. Руководитель проектов"></div>
+              <p class="manager__name">Марина Афанасьева</p>
+              <p class="manager__prof">Руководитель проектов</p>
+              <a class="link manager__email" href="mailto:ds@edem-sk.pro">ds@edem-sk.pro</a>
+            </div>
+          </div>
+        
+          <button class="about__team-btn">Показать ещё 9 контактов</button>
+        </div>
+
+        <div class="about__work-time work-time">
+              
+           <h2 class="work-time__title">Приходите к нам в офис на консультацию. <br>Мы открыты с 10:00 до 19:00</h2>
+           <div class="slider work-time__slider">
+             <!-- Slider main container -->
+             <div class="swiper-container slider__container">
+               <!-- Additional required wrapper -->
+               <div class="swiper-wrapper slider__slides-wrapper">
+                 <!-- Slides -->
+                 <div class="swiper-slide slider__slide"><img src="img/content/work-time1_640.jpg" alt=""></div>
+                 <div class="swiper-slide slider__slide"><img src="img/content/work-time2_640.jpg" alt=""></div>
+                 <div class="swiper-slide slider__slide"><img src="img/content/work-time3_640.jpg" alt=""></div>
+               </div>
+             </div>
+             <!-- If we need navigation buttons -->
+             <button class="swiper-button-prev slider__btn slider__btn--prev" aria-label="Переключить на предидущий слайд">
+               <svg class="icon icon-arrow">
+                 <use xlink:href="img/design/symbol_sprite.svg#_arrow-left"/>
+               </svg>
+             </button>
+             <button class="swiper-button-next slider__btn slider__btn--next" aria-label="Переключить на следующий слайд">
+               <svg class="icon icon-arrow">
+                 <use xlink:href="img/design/symbol_sprite.svg#_arrow-right"/>
+               </svg>
+             </button>
+             <!-- If we need pagination -->
+             <div class="swiper-pagination slider__pagination"></div>
+           </div>
+        </div>
+        
+        <div class="about__info">
+         <h2 class="about__info-title">Наша команда специалистов решит любые ваши задачи</h2>
+         <div class="about__info-img">
+          <img class="lazyload"
+          src="img/content/work-proces_640.jpg"
+          alt="Група сотрудников обсуждают проект"
+          data-srcset="img/content/work-proces_640.jpg 640w,
+          img/content/work-proces_920.jpg 920w,
+          img/content/work-proces_1220.jpg 1220w"
+          data-sizes="100vw, (min-width: 900px) 80vw">
+        </div>
+        
+          <div class="our-advantage">
+            <a href="about.html" class="btn btn--fill btn--fill-prim btn--animated our-advantage__link-more">Подробнее о компании</a>
+          
+            <h4 class="our-advantage__title">Гарантируем</h4>
+            <ul class="our-advantage__list">
+              <li class="our-advantage__item">Многоуровневый контроль качества</li>
+              <li class="our-advantage__item">Сроки и стоимость зафиксированы </li>
+              <li class="our-advantage__item">Оплата по факту выполнения этапа</li>
+              <li class="our-advantage__item">Персональный менеджер для вашего проекта</li>
+            </ul>
+          </div>
+          
+          <div class="our-advantage our-advantage--hidden line">
+            <h4 class="our-advantage__title">Мы в цифрах</h4>
+            <ul class="our-advantage__list">
+              <li class="our-advantage__item"><span class="our-advantage__num">72</span>сотрудника в штате</li>
+              <li class="our-advantage__item"><span class="our-advantage__num">5</span>дизайнеров</li>
+              <li class="our-advantage__item"><span class="our-advantage__num our-advantage__num--blue">320</span>завершенных проектов</li>
+              <li class="our-advantage__item"><span class="our-advantage__num">47%</span>клиентов по рекомендации</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="js/libs.js"></script>
+  <script src="js/swiper.min.js"></script>
   <script src="js/common.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- special for IE -->
+  <meta name="format-detection" content="telephone=no"> <!-- for Safari -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ремонт и отделка квартир, коттеджей, 
+  офисов в Москве и Московской области"> <!-- maxLength = 150 -->
+  <title>EDEM.Проекты в работе</title> <!-- maxLength = 65 -->
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#00ADB5">
+  
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- IE HACK FOR CSS-->
+  <script>
+    document.documentElement.setAttribute('data-useragent', navigator.userAgent);
+  </script>
+</head>
+<body class="page work-project-page">
+    <header class="header">
+      <div class="header__top-row">
+  
+        <div class="container">
+          <div class="header__inner">
+  
+            <nav class="menu header-menu" data-jump data-jump-to=".drop-content__inner.js-jump 1 1100">
+              <ul class="menu__list header-menu__list">
+                <li class="menu__item header-menu__item">
+                  <a href="blog.html" class="menu__link header-menu__link">Блог</a>
+                </li>
+                <li class="menu__item header-menu__item">
+                  <a href="technology.html" class="menu__link header-menu__link">Технологии</a>
+                </li>
+                <li class="menu__item header-menu__item">
+                  <a href="faq.html" class="menu__link header-menu__link">Частые вопросы</a>
+                </li>
+                <li class="menu__item header-menu__item">
+                  <a href="about.html" class="menu__link header-menu__link">О компании</a>
+                </li>
+                <li class="menu__item header-menu__item">
+                  <a href="" class="menu__link header-menu__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+  
+            <div class="header__work-time">Пн – Пт / с 9:00 до 18:00</div>
+  
+          </div>
+        </div>
+      </div>
+      <!-- end .header__top-row -->
+  
+      <div class="container">
+        <div class="header__inner header__bottom-row js-jump">
+  
+          <div class="header__logo-wrap">
+            <a href="/" class="logo">
+              <img class="logo__img header__logo-img" src="img/content/logo.svg" alt="Логотип компании ЕДЕМ">
+              <div class="logo__txt">
+                <p>Ремонт и отделка квартир, коттеджей, офисов в Москве и Московской области</p>
+              </div>
+            </a>
+          </div>
+  
+        <button class="burger" title="Кнопка открытия и закрытия навигации" aria-label="Кнопка открытия и закрытия меню       ">
+          <span class="burger__toggle"></span>
+        </button>
+        <div class="header__main-menu-wrap drop-content">
+          <div class="drop-content__inner js-jump">
+  
+            <nav class="header__main-menu main-menu">
+              <ul class="main-menu__list">
+                <li class="main-menu__item">
+                  <ul class="main-menu__inner-list">
+                    <li class="main-menu__inner-item">
+                      <a href="services.html" class="main-menu__link main-menu__inner-link">Услуги</a>
+                    </li>
+                    <li class="main-menu__inner-item">
+                      <a href="projects.html" class="main-menu__link main-menu__inner-link">Проекты</a>
+                    </li>
+                    <li class="main-menu__inner-item">
+                      <a href="" class="main-menu__link main-menu__inner-link">Акции</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="main-menu__item main-menu__work">
+                  <a href="work-projects.html" class="main-menu__link main-menu__work-link">Проекты в работе <sup>06</sup></a>
+                </li>
+                <li class="main-menu__item main-menu__repair-calc">
+                  <a href="" class="main-menu__link">Калькулятор ремонта</a>
+                </li>
+                <li class="main-menu__item">
+                  <div class="main-menu__tel">
+                    <a href="tel:+74951157103" class="main-menu__tel-link" data-jump data-jump-to=".header__bottom-row.js-jump 1 1100" aria-label="Вы можете связаться с нами по нажатию на кнопку">
+                      <span class="main-menu__tel-num">+7 495 115 71 03</span>
+                    </a>
+                    <a href="#feedback" class="main-menu__btn btn " data-jump data-jump-to=".drop-content__inner.js-jump 2 1100">
+                      Заказать звонок
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <div class="contacts">
+              <ul class="contacts__tel-list">
+                <li class="contacts__tel-item">
+                  <a href="tel:+74951157103" class="contacts__tel-link tel-link">+7 (495) 115 71 03</a>
+                </li>
+                <li class="contacts__tel-item">
+                  <a href="tel:+79251337770" class="contacts__tel-link tel-link">+7 (925) 133 77 70</a>
+                </li>
+              </ul>
+            
+              <address class="contacts__address">
+                <a href="mailto:info@edem-sk.pro" class="contacts__address-link">info@edem-sk.pro</a>
+                <p class="contacts__address-txt">
+                  119331, Москва,<br>
+                  пр. Вернадского  21к3, офис 603
+                </p>
+              </address>
+            
+              <ul class="contacts__social-list">
+                
+                <li class="contacts__social-item">
+                  <a href="" class="contacts__social-link" aria-label="Переход на страницу телеграма  ">
+                    <svg class="icon icon-social">
+                      <use xlink:href="img/design/symbol_sprite.svg#_insta"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contacts__social-item">
+                  <a href="" class="contacts__social-link" aria-label="Переход на страницу телеграма  ">
+                    <svg class="icon icon-social icon-telegram">
+                      <use xlink:href="img/design/symbol_sprite.svg#_telegram"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </header>
+  
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">
+          Эдем
+        </a></li>
+        <li class="breadcrumbs__item"><span class="breadcrumbs__item-separator">/</span><a href="work-projects.html" class="breadcrumbs__link">Проекты в работе</a></li>
+        <li class="breadcrumbs__item"><span class="breadcrumbs__item-separator">/</span><a class="breadcrumbs__link">3-х квартира 120м, Красногорский бульвар, 34</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <h1 class="work-project-page__title">3-х  комнатная квартира 120м, Красногорский бульвар, 34</h1>
+    
+    <div class="work-project">
+      <main class="page__body work-project__content">
+                <div class="gallery-slider work-project__slider slider">
+                  <!-- Slider main container -->
+                  <div class="swiper-container slider__container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper slider__slides-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide slider__slide">
+                        <img class="slider__img lazyload"
+                        src="img/content/project5_img_640.jpg"
+                        alt="Красивый дизайн квартиры в стиле лофт"
+                        data-srcset="img/content/project1_img_640.jpg 640w,
+                        img/content/project5_img_920.jpg 920w,
+                        img/content/project5_img_1220.jpg 1220w"
+                        data-sizes="(min-width: 900px) 80vw, 100vw">
+                      </div>
+                      <div class="swiper-slide slider__slide">
+                        <img class="slider__img lazyload"
+                        src="img/content/project1_img_640.jpg"
+                        alt="Красивый дизайн квартиры в стиле лофт"
+                        data-srcset="img/content/project1_img_640.jpg 640w,
+                        img/content/project1_img_920.jpg 920w,
+                        img/content/project1_img_1220.jpg 1220w"
+                        data-sizes="(min-width: 900px) 80vw, 100vw">
+                      </div>
+                      <div class="swiper-slide slider__slide">
+                        <img class="slider__img lazyload"
+                        src="img/content/project2_img_640.jpg"
+                        alt="Красивый дизайн квартиры в стиле лофт"
+                        data-srcset="img/content/project2_img_640.jpg 640w,
+                        img/content/project2_img_920.jpg 920w,
+                        img/content/project2_img_1220.jpg 1220w"
+                        data-sizes="(min-width: 900px) 80vw, 100vw">
+                      </div>
+                      <div class="swiper-slide slider__slide">
+                        <img class="slider__img lazyload"
+                        src="img/content/project3_img_640.jpg"
+                        alt="Красивый дизайн квартиры в стиле лофт"
+                        data-srcset="img/content/project3_img_640.jpg 640w,
+                        img/content/project3_img_920.jpg 920w,
+                        img/content/project3_img_1220.jpg 1220w"
+                        data-sizes="(min-width: 900px) 80vw, 100vw">
+                      </div>
+                      <div class="swiper-slide slider__slide">
+                        <img class="slider__img lazyload"
+                        src="img/content/project4_img_640.jpg"
+                        alt="Красивый дизайн квартиры в стиле лофт"
+                        data-srcset="img/content/project4_img_640.jpg 640w,
+                        img/content/project4_img_920.jpg 920w,
+                        img/content/project4_img_1220.jpg 1220w"
+                        data-sizes="(min-width: 900px) 80vw, 100vw">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination slider__pagination"></div>
+                  <!-- If we need navigation buttons -->
+                  <button class="swiper-button-prev slider__btn slider__btn--fill-round slider__btn--prev" aria-label="Переключить на предидущий слайд">
+                    <svg class="icon icon-arrow">
+                      <use xlink:href="img/design/symbol_sprite.svg#_arrow-left"/>
+                    </svg>
+                  </button>
+                  <button class="swiper-button-next slider__btn slider__btn--fill-round slider__btn--next" aria-label="Переключить на следующий слайд">
+                    <svg class="icon icon-arrow">
+                      <use xlink:href="img/design/symbol_sprite.svg#_arrow-right"/>
+                    </svg>
+                  </button>
+                  <p class="slider__label">Обновлено 2 дня назад</p>
+                </div>
+
+        <div class="progress work-project__progress" data-done-by="92">
+          <div class="progress__line">
+            <div class="progress__meter"></div>
+          </div>
+          <p class="progress__txt">Готово на <span class="progress__out">0</span>%</p>
+        </div>
+
+        <div class="schedule">
+          <h2 class="schedule__title">График работ</h2>
+          <p class="schedule__desc">В начале каждого проекта мы составляем детальный график и выполняем работы четко следуя ему</p>
+
+          <div class="schedule__list">
+            <svg class="schedule__svg" width="50px" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"></svg>
+            <div class="schedule__list-item">
+              <div class="stage stage--complate">
+                
+              <div class="stage__body">
+                <h3 class="stage__caption">
+                  Этап 1
+                </h3>
+                <ul class="stage__list">
+                  <li>Завоз материалов и инструмента, подготов ительные работы</li>
+                  <li>Демонтажные работы, вынос мусора</li>
+                </ul>
+              </div>
+          
+              <footer class="stage__footer">
+                <p class="stage__footer-txt">Закончили 28 февраля. Точно в срок</p>
+                <a href="" class="stage__footer-link">Смотреть фотоотчет</a>
+              </footer>
+              </div>
+            </div>
+          
+            <div class="schedule__list-item">
+              <div class="stage stage--complate">
+                
+              <div class="stage__body">
+                <h3 class="stage__caption">
+                  Этап 2
+                </h3>
+                <ul class="stage__list">
+                  <li>Возведение межкомнатных перегородок</li>
+                  <li>Штукатурка стен механизированным способом</li>
+                </ul>
+              </div>
+          
+              <footer class="stage__footer">
+                <p class="stage__footer-txt">Закончили 20 марта. Точно в срок</p>
+                <a href="" class="stage__footer-link">Смотреть фотоотчет</a>
+              </footer>
+              </div>
+          
+            </div>
+            <div class="schedule__list-item">
+              <div class="stage stage--process">
+                
+              <div class="stage__body">
+                <h3 class="stage__caption">
+                  Этап 3
+                </h3>
+                <ul class="stage__list">
+                  <li>Штробление стен</li>
+                  <li>Разводка электрики и установка подрозетников</li>
+                  <li>Устройство разводки ХВС и ГВС, канализации, установка гребенок, фильтров</li>
+                  <li>Устройство стяжки</li>
+                </ul>
+              </div>
+          
+              <footer class="stage__footer">
+                <p class="stage__footer-txt">Закончили 28 февраля. Точно в срок</p>
+                <a href="" class="stage__footer-link">Смотреть фотоотчет</a>
+              </footer>
+              </div>
+          
+            </div>
+            <div class="schedule__list-item">
+              <div class="stage stage--pending">
+                
+              <div class="stage__body">
+                <h3 class="stage__caption">
+                  Этап 4
+                </h3>
+                <ul class="stage__list">
+                  <li>Установка раковины, унитаза напольного/подвесного, смесителей, вентилятора.</li>
+                  <li>Светильники. Бра, люстры, розетки, выключатели.</li>
+                </ul>
+              </div>
+          
+              <footer class="stage__footer">
+                <p class="stage__footer-txt">По плану. 01 – 26 июня</p>
+              </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="report">
+          <h2 class="report__title">Фотоотчет</h2>
+          <div class="report__list">
+          
+            <div class="report__item report-stage">
+              <header class="report-stage__header">
+                <p class="report-stage__message">Этап 3 — сейчас в работе</p>
+                <p class="report-stage__date">фото 20 марта</p>
+              </header>
+              <div class="slider report-slider">
+                <!-- Slider main container -->
+                <div class="swiper-container slider__container">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper slider__slides-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide slider__slide">
+                      <img src="img/content/project1_img_640.jpg" alt="Изображение из фотоотчета">
+                    </div>
+                    <div class="swiper-slide slider__slide">
+                      <img src="img/content/project5_img_640.jpg" alt="Изображение из фотоотчета">
+                    </div>
+                    <div class="swiper-slide slider__slide">
+                      <img src="img/content/project2_img_640.jpg" alt="Изображение из фотоотчета">
+                    </div>
+                    <div class="swiper-slide slider__slide">
+                      <img src="img/content/project4_img_640.jpg" alt="Изображение из фотоотчета">
+                    </div>
+                  </div>
+          
+                </div>
+              </div>
+              <a href="" class="report-stage__link">Смотреть полный фотоотчет</a>
+            </div>
+            <div class="report__item report-stage">
+              <header class="report-stage__header">
+                <h3 class="report-stage__title">Этап 2</h3>
+                <p class="report-stage__date">фото 28 февраля</p>
+              </header>
+              <div class="slider report-slider">
+                <!-- Slider main container -->
+                <div class="swiper-container slider__container">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper slider__slides-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide slider__slide">
+                      <img src="img/content/project1_img_640.jpg" alt="Изображение из фотоотчета">
+                    </div>
+                    <div class="swiper-slide slider__slide">
+                      <img src="img/content/project5_img_640.jpg" alt="Изображение из фотоотчета">
+                    </div>
+                    <div class="swiper-slide slider__slide">
+                      <img src="img/content/project2_img_640.jpg" alt="Изображение из фотоотчета">
+                    </div>
+                    <div class="swiper-slide slider__slide">
+                      <img src="img/content/project4_img_640.jpg" alt="Изображение из фотоотчета">
+                    </div>
+                  </div>
+          
+                </div>
+              </div>
+              <a href="" class="report-stage__link">Смотреть полный фотоотчет</a>
+            </div>
+            <div class="report__item report-stage">
+              <header class="report-stage__header">
+                <h3 class="report-stage__title">Этап 3</h3>
+                <p class="report-stage__date">фото 17 января</p>
+              </header>
+              <div class="slider report-slider">
+                <!-- Slider main container -->
+                <div class="swiper-container slider__container">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper slider__slides-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide slider__slide">
+                      <img src="img/content/project1_img_640.jpg" alt="Изображение из фотоотчета">
+                    </div>
+                    <div class="swiper-slide slider__slide">
+                      <img src="img/content/project5_img_640.jpg" alt="Изображение из фотоотчета">
+                    </div>
+                    <div class="swiper-slide slider__slide">
+                      <img src="img/content/project2_img_640.jpg" alt="Изображение из фотоотчета">
+                    </div>
+                    <div class="swiper-slide slider__slide">
+                      <img src="img/content/project4_img_640.jpg" alt="Изображение из фотоотчета">
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <a href="" class="report-stage__link">Смотреть полный фотоотчет</a>
+            </div>
+          </div>
+        </div>
+      </main>  
+
+      <aside class="work-project__sidebar">
+        <h2>Запишитесь на бесплатную экскурсию по проектам в работе</h2>
+        <button class="btn btn--fill btn--fill-prim btn--animated">Записаться</button>
+      </aside>  
+    </div>
+  </div>
+  <div class="our-projects">
+    <header class="our-projects__header container">
+      <h2 class="our-projects__title">Другие проекты в работе</h2>
+      <a href="projects.html" class="link link--framed link-more" data-jump data-jump-to=".our-projects__gallery.js-jump 2 600">Все проекты</a>
+    </header>
+
+    <div class="our-projects__gallery work-project-page__gallery container js-jump">
+      <div class="gallery">
+        
+        <div class="gallery__item">
+          <a href="project-page.html" class="project-preview work-project__project-preview">
+            <img class="project-preview__img projects-gallery__img lazyload"
+            src="img/content/project3_img_640.jpg"
+            alt="Красивый дизайн квартиры в стиле лофт"
+            data-srcset="img/content/project3_img_640.jpg 640w,
+            img/content/project3_img_920.jpg 920w,
+            img/content/project3_img_1220.jpg 1220w"
+            data-sizes="(max-width: 599px) 100vw, 50vw">
+            <p class="project-preview__desc">Коттедж 700 м², ул. Бабакино</p>
+            <p class="project-preview__label">Обновлено 2 дня назад</p>
+          </a>
+          <div class="progress" data-done-by="68">
+            <div class="progress__line">
+              <div class="progress__meter"></div>
+            </div>
+            <p class="progress__txt">Готово на <span class="progress__out">0</span>%</p>
+          </div>
+        </div>
+        
+        <div class="gallery__item">
+          <a href="project-page.html" class="project-preview work-project__project-preview">
+            <img class="project-preview__img projects-gallery__img lazyload"
+            src="img/content/project1_img_640.jpg"
+            alt="Красивый дизайн квартиры в стиле лофт"
+            data-srcset="img/content/project1_img_640.jpg 640w,
+            img/content/project1_img_920.jpg 920w,
+            img/content/project1_img_1220.jpg 1220w"
+            data-sizes="(max-width: 599px) 100vw, 50vw">
+            <p class="project-preview__desc">Коттедж 700 м², ул. Бабакино</p>
+            <p class="project-preview__label">Обновлено 5 дня назад</p>
+          </a>
+          <div class="progress" data-done-by="37">
+            <div class="progress__line">
+              <div class="progress__meter"></div>
+            </div>
+            <p class="progress__txt">Готово на <span class="progress__out">0</span>%</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <footer class="page__footer footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__contacts">
+  
+          <a class="logo footer__logo">
+            <img class="logo__img" src="img/content/logo.svg" alt="Логотип компании ЕДЕМ">
+          </a>
+          <div class="contacts">
+            <ul class="contacts__tel-list">
+              <li class="contacts__tel-item">
+                <a href="tel:+74951157103" class="contacts__tel-link tel-link">+7 (495) 115 71 03</a>
+              </li>
+              <li class="contacts__tel-item">
+                <a href="tel:+79251337770" class="contacts__tel-link tel-link">+7 (925) 133 77 70</a>
+              </li>
+            </ul>
+          
+            <address class="contacts__address">
+              <a href="mailto:info@edem-sk.pro" class="contacts__address-link">info@edem-sk.pro</a>
+              <p class="contacts__address-txt">
+                119331, Москва,<br>
+                пр. Вернадского  21к3, офис 603
+              </p>
+            </address>
+          
+            <ul class="contacts__social-list">
+              
+              <li class="contacts__social-item">
+                <a href="" class="contacts__social-link" aria-label="Переход на страницу телеграма  ">
+                  <svg class="icon icon-social">
+                    <use xlink:href="img/design/symbol_sprite.svg#_insta"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__social-item">
+                <a href="" class="contacts__social-link" aria-label="Переход на страницу телеграма  ">
+                  <svg class="icon icon-social icon-telegram">
+                    <use xlink:href="img/design/symbol_sprite.svg#_telegram"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="menu footer__menu">
+          <ul class="menu__list">
+            <li class="menu__item footer__list-item">
+              <a href="projects.html.html" class="menu__link footer__link">Проекты</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="" class="menu__link footer__link">Акции</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="blog.html" class="menu__link footer__link">Блог</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="technology.html" class="menu__link footer__link">Технологии</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="faq.html" class="menu__link footer__link">Частые вопросы</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="about.html" class="menu__link footer__link">О компании</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="" class="menu__link footer__link">Контакты</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="work-projects.html" class="menu__link footer__link">Проекты в работе</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer__list">
+          <li class="footer__list-item">Ремонт под ключ</li>
+          <li class="footer__list-item"><a href="card-repair.html" class="footer__link">Стандарт — от 9000 руб / м²</a></li>
+          <li class="footer__list-item"><a href="card-repair.html" class="footer__link">Комфорт — от 11 000 руб / м²</a></li>
+          <li class="footer__list-item"><a href="card-repair.html" class="footer__link">Бизнес — от 14 000 руб / м²</a></li>
+          <li class="footer__list-item"><a href="card-repair.html" class="footer__link">Ремонт санузлов</a></li>
+          <li class="footer__list-item"><a href="card-repair.html" class="footer__link">Косметический ремонт</a></li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__list-item">Дизайн интерьера</li>
+          <li class="footer__list-item"><a href="card-design.html" class="footer__link">Дизайн-проект под ключ</a></li>
+          <li class="footer__list-item"><a href="card-design.html" class="footer__link">Базовый дизайн-проект</a></li>
+          <li class="footer__list-item"><a href="card-design.html" class="footer__link">3-D визуализация</a></li>
+          <li class="footer__list-item"><a href="card-design.html" class="footer__link">Авторский надзор</a></li>
+          <li class="footer__list-item"><a href="card-design.html" class="footer__link">Комплектация объекта</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer__copy-wrap">
+        <div class="footer__copy">
+          <p class="footer__copy-txt">&copy; 2020, Эдэм. Ремонт и отделка квартир, коттеджей, офисов в Москве и МО</p>
+          <a href="" class="footer__copy-link">Политика конфиденциальности</a>
+        </div>
+      </div>
+  
+    </div>
+  </footer>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/libs.js"></script>
+  <script src="js/common.min.js"></script>
+</body>
+</html>
